@@ -3,3 +3,11 @@
 
 /* Pour utiliser la police Cabin (titres) */
 /* font-family: 'Cabin Sketch', cursive; */
+
+footer {
+    background-color: #444;
+    color: #eee;
+    margin: 0;
+    width: 100%;
+}
+
