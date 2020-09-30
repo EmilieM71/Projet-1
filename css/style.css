@@ -19,8 +19,8 @@ $$  /   \$$ |$$ |$$ |\$$$$$$$ |         $$ |$$ |      $$ |$$$$$$$  |
 /* Pour utiliser la police Cabin (titres) */
 /* font-family: 'Cabin Sketch', cursive; */
 
-body {
 
+body {
     font-family: 'Poppins', sans-serif;
     color:#333333; /* a definir */
     background-color:#efefef;
@@ -115,3 +115,16 @@ a:hover {
     background-color: #828282;
     color:#FFF;
 }
+
+
+/***********************************************************
+ -  Blocks
+***********************************************************/
+
+footer {
+    background-color: #444;
+    color: #eee;
+    margin: 0;
+    width: 100%;
+}
+
