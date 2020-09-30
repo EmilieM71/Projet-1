@@ -5,6 +5,8 @@ body {
   }
   
 
+  
+
 /* A definir*/
 .container {
     max-width: 1140px;
@@ -76,7 +78,7 @@ body {
   }
   
   .header .menu-icon .navicon {
-    background: #333;
+    background: #FFF;
     display: block;
     height: 2px;
     position: relative;
@@ -86,7 +88,7 @@ body {
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: #FFF;
     content: '';
     display: block;
     height: 100%;
@@ -129,27 +131,41 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
-  /* 48em = 768px */
-  
+ 
 
-
-
-
-  @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
+/***********************************************************
+ -  Media Query (bootstrap size)
+***********************************************************/
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  .header li {
+    float: left;
   }
-  
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
