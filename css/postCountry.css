@@ -27,6 +27,52 @@ p {
     box-shadow: 5px 2px 8px #166f6f;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+}
+.col2 {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    column-count: 2;
+    text-align: justify;
+    column-gap: 30px;
+}
+
+.float {
+    float: right;
+}
+
+.photo-mosaic {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.mosaic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mosaic > div {
+    border: 1px solid red;
+    width: 9%;
+    height: 10%;
+    margin-bottom: 1%;
+}
+
+.mosaic > div:nth-child(1) {
+    width: 39%;
+    height: 19%;
+}
+
+.mosaic > div:nth-child(2) {
+    width: 59%;
+    height: 29%;
+}
+
 /***********************************************************
  -  Media Query (bootstrap size)
 ***********************************************************/
@@ -49,6 +95,8 @@ p {
         height: auto;
     }
 }
+
+
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width:768px) and (max-width:992px) {
