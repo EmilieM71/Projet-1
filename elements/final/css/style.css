@@ -178,6 +178,23 @@ a:hover {
     font-size: 11px;
 }
 
+.tags-big {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 6px 10px;
+    font-size: 22px;
+}
+
+
 .tags-default{
     color:#FFF;
     background-color: #333333;
@@ -190,15 +207,28 @@ a:hover {
 
 
 /* america */
-.tags-default{
+.tags-america{
     color:#FFF;
     background-color: #166f6f;
 }
 
-.tags-default:hover{
-    background-color: #166f6f;
+.tags-america:hover{
+    background-color: #5d9595;
     color:#FFF;
 }
+
+
+/* america */
+.tags-asia{
+    color:#FFF;
+    background-color: #eca11f;
+}
+
+.tags-asia:hover{
+    background-color: #eca11f;
+    color:#FFF;
+}
+
 
 
 
@@ -226,25 +256,26 @@ footer {
  -  Pages : articles
 ***********************************************************/
 
+/* 
+.article-filter{
+    background-color: #d7d7d7;
+}
+ */
+
+
+ .article-filtre-text{
+     font-size : 22px;
+ }
 .article-bloc{
     background-color: #f2f2f2;
     padding:30px;
-    border-bottom: #166f6f solid 5px;
     overflow: hidden;
     display: flex;
     border-radius: 20px 0px 20px 0px;
     margin-bottom: 25px;
-    box-shadow: 5px 2px 8px #166f6f;
+
 }
 
-
-.article-bloc{
-    background-color: #f2f2f2;
-    padding:30px;
-    border-bottom: #166f6f solid 5px;
-    overflow: hidden;
-    display: flex;
-}
 
 .article-bloc > div {
     padding:25px;
@@ -269,8 +300,18 @@ footer {
 
 
 
+.article-bloc-america{
+    border-bottom: #166f6f solid 5px;
+    box-shadow: 5px 2px 8px #166f6f;
+}
 
 
+
+
+.article-bloc-asia{
+    border-bottom: #eca11f solid 5px;
+    box-shadow: 5px 2px 8px #eca11f;
+}
 
 
 
