@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="../css/style.css" /> -->
     <!-- <link rel="stylesheet" href="../css/icons.css"> -->
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <title>Acceuil</title>
@@ -34,14 +35,15 @@
         <div class="container-form">
             <h2 class="title-form">Contact Us</h2>
             <form action="" class="contact-form">
-                <label for="userFirstName"> Nom :
-                </label><input type="text" id="userFirstName" name="Nom" required>
-                <label for="userLastName"> Prénom :
-                </label><input type="text" id="userLastName" name="Prénom" required>
-                <label for="userTelephone"> Numéro de téléphone :
-                </label><input type="tel" id="userTelephone" name="Tél" required>
-                <label for="userEmail"> Adresse email : 
-                </label><input type="email" id="userEmail" name="email" required>
+                <label for="userFirstName"> Nom <span class="error-text">*</span>
+                </label><input type="text" id="userFirstName" name="Nom" placeholder="Doe"required>
+                <div class="error-text error-msg" id="errorName">Il manque le nom</div>
+                <label for="userLastName"> Prénom<span class="error-text">*</span> 
+                </label><input type="text" id="userLastName" name="Prénom" placeholder="John" required>
+                <label for="userTelephone"> Numéro de téléphone <span class="error-text">*</span>
+                </label><input type="tel" id="userTelephone" name="Tél" placeholder="0669696969" required>
+                <label for="userEmail"> Adresse email  <span class="error-text">*</span>
+                </label><input type="email" id="userEmail" name="email" placeholder="xyz@gmail.com" required>
                 <label for="trip-destination">Quel pays vous intéresse ? </label>
                 <select name="select-destination" id="trip-destination">
                     <option value="Pays 1">Pays 1</option>
@@ -49,7 +51,8 @@
                     <option value="Pays 3">Pays 3</option>
                     <option value="Pays 4">Pays 4</option>
                 </select>
-                <label for="textarea-form">Votre message :</label>    
+                <label for="textarea-form">Votre message 
+                </label>    
                 <textarea id="textarea-form" wrap="soft" maxlength="300" rows="3" placeholder="Type in your message" required>
 
                 </textarea>
