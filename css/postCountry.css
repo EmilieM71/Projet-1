@@ -1,0 +1,31 @@
+.img-container {
+    min-width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+
+.contSummaryFirstSection {
+    background-color: #71BBD9;
+    width: 20%;
+    max-height: 200px;
+    padding : 10px;
+    display: block;
+    position: absolute;
+    top: 10%; 
+    left: 60%;
+    height:200px; 
+    z-index:2;
+    opacity: 0.7;
+    border-bottom: #3D735A solid 5px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    margin-bottom: 25px;
+    box-shadow: 5px 2px 8px #166f6f;
+}
+ 
+/* Couleurs : 
+#0B9ED9 bleu foncé
+#71BBD9 bleu moyen
+#BDEDF2 bleu clair
+#3D735A vert foncé
+#6FA66D vert clair */
