@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  /* flex-wrap: wrap; */
+  width: 320px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3e363f;
+}
+input,
+select,
+textarea {
+  margin: 0 3rem;
+  border-radius: 0.5em;
+  padding: 1rem;
+  padding-left: 0.5em;
+  /* border: 0.1rem solid rgba(0, 0, 0, 0.781); */
+  width: 77%;
+  box-shadow: 3px 3px 3px black;
+}
+select {
+  width: 87%;
+}
+label {
+  color: black;
+  padding: 0.4em 0;
+}
+.container-form {
+  background-color: #c5c5c5;
+  /* max-width: 320px; */
+  padding: 0.5em 0;
+}
+.title-form {
+  text-align: center;
+  margin: 0.3rem 0;
+  text-decoration: underline;
+  color: #4f6367;
+}
+#btn-form {
+  margin-top: 7px;
+  margin-right: 2em;
+  width: 33%;
+  align-self: flex-end;
+  color: rgba(27, 99, 12, 0.842);
+  box-shadow: 4px 5px 6px black;
+  border-radius: 0.7rem;
+}
+#btn-form:hover {
+  background-color: rgb(197, 197, 197, 0.3);
+  cursor: pointer;
+}
+/* Barre de navigation */
+.navbar {
+  position: relative;
+  display: flex;
+  background: #444;
+  color: #eee;
+  height: 2.4em;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.home-link {
+  flex-grow: 1;
+}
+
+.navbar ul {
+  max-height: 0;
+  transition: max-height 0.3s;
+  position: absolute;
+  background: #444;
+  top: 2.4em;
+  right: 0;
+  padding: 0 10px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  height: 44px;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img {
+  display: inline-block;
+  color: #eee;
+  margin: 0;
+}
+
+.navbar input[type='checkbox'] {
+  display: none;
+}
+
+.navbar input[type='checkbox']:checked ~ ul {
+  max-height: 100vh;
+}
+
+/* Cache les icons du menu*/
+.navbar input[type='checkbox'] + label span[class^='icon-'] {
+  display: none;
+}
+/* Affiche l'icon menu burger quand la checkbox n'est pas cochée*/
+.navbar input[type='checkbox']:not(:checked) + label .icon-menu {
+  display: inline;
+}
+/* Affiche l'icon menu close quand la checkbox EST cochée */
+.navbar input[type='checkbox']:checked + label .icon-cross {
+  display: inline;
+}
+
+@media screen and (min-width: 360px) {
+  .navbar input[type='checkbox']:not(:checked) + label .icon-menu {
+    display: none;
+  }
+
+  .navbar input[type='checkbox']:checked + label .icon-cross {
+    display: none;
+  }
+
+  .navbar ul li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    top: 10px;
+    height: 10vh;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    width: 100%;
+  }
+  #btn-form {
+    width: 25%;
+    margin-right: 11%;
+    margin-top: 2em;
+  }
+  .navbar ul {
+    top: 10px;
+    height: 10vh;
+  }
+  select {
+    width: 79%;
+  }
+}
+
+/* Gestion des erreurs */
+.error-text {
+  color: red;
+}
+
+.error-msg {
+  display: none;
+}
