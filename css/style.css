@@ -127,6 +127,11 @@ a:hover {
     border-radius: 20px 20px 20px 20px;
 }
 
+.articleCarousel {
+    display: flex;
+    justify-items: center;
+}
+
 .articleCarousel a{
     display: flex;
     flex-direction: column;
@@ -185,11 +190,11 @@ footer {
 
 .socialLinks {
     display: flex;
-    weight: 33%;
+    width: 33%;
 }
 
 .socialLinks a {
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 
 .socialLinks a img {
@@ -202,9 +207,6 @@ div.map {
     justify-content: center;
 }
 
-.map img{
-    
-}
 
 
 
@@ -226,16 +228,23 @@ div.map {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media(min-width:768px){
 
+    .articleCarousel a {
+        max-width: 70%;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media(min-width:992px){
-
-
+    
+    .articleCarousel a {
+        max-width: 70%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
-
+    .articleCarousel a {
+        max-width: 70%;
+    }
 }
