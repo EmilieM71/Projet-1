@@ -123,19 +123,50 @@ a:hover {
 
 .carousel {
     height: 50%;
+    margin: 5rem;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .articleCarousel a{
     display: flex;
     flex-direction: column;
-    background-color: #d55959;
+    /* background-color: #d55959; */
+    background: url("../images/kenya/kenya1.jpg") no-repeat;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 1em;
     margin: 1em;
     justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 2px 8px #A8763D;
+    background-position: center;
 }
 
-a img {
+.textArticleCarousel h2 {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel p {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel {
+    display: flex;
+    background: #ffcb8f;
+    box-shadow: 5px 2px 8px black;
+    border-radius: 8px 8px 8px 8px;
+    flex-direction: column;
+    opacity: 90%;
+}
+
+.articleCarousel a img {
     height: 300px;
+    opacity: 0%;
 }
 
 .block-element {
@@ -145,10 +176,35 @@ footer {
     background-color: #444;
     color: #eee;
     margin: 0;
-    width: 100%;
+    max-height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
+.socialLinks {
+    display: flex;
+    weight: 33%;
+}
 
+.socialLinks a {
+    flex-basis: 50%;
+}
+
+.socialLinks a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+div.map {
+    display: flex;
+    justify-content: center;
+}
+
+.map img{
+    
+}
 
 
 
