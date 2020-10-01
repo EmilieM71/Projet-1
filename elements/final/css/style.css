@@ -42,7 +42,6 @@ h5 {
     margin:0px; /* a definir */
 } 
 
-
 h1 {
     font-size: 72px; /* a definir */
 }
@@ -78,6 +77,48 @@ p {
 /***********************************************************
  -  Actions
 ***********************************************************/
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size:14px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  ul.breadcrumb li:last-child a{
+    font-weight: bold;;
+  }
+
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #d55959;
+    text-decoration: none;
+  }
+
+
+
+
+
 a {
     /* Bouton*/
     color:#d55959; /* a definir */
