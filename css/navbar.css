@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+  }
+
+  /* Barre de navigation */
+  .navbar {
+    position: relative;
+    display: flex;
+    background: #444;
+    color: #eee;
+    height: 2.4em;
+    align-items: center;
+    padding: 0 0.5em;
+  }
+  
+  .home-link {
+    flex-grow: 1;
+  }
+  
+  .navbar ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    position: absolute;
+    background: #444;
+    top: 2.4em;
+    right: 0;
+    padding: 0 10px;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    list-style-type: none;
+  }
+
+  .navbar ul li a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar img {
+    display: inline-block;
+    color: #eee;
+    margin: 0;
+  }
+  
+  .navbar input[type="checkbox"] {
+    display: none;
+  }
+  
+  .navbar input[type="checkbox"]:checked ~ ul {
+    max-height: 100vh;
+  }
+  
+  /* Cache les icons du menu*/
+  .navbar input[type="checkbox"] + label span[class^="icon-"] {
+    display: none;
+  }
+  /* Affiche l'icon menu burger quand la checkbox n'est pas cochée*/
+  .navbar input[type="checkbox"]:not(:checked) + label .icon-menu {
+    display: inline;
+  }
+  /* Affiche l'icon menu close quand la checkbox EST cochée */
+  .navbar input[type="checkbox"]:checked + label .icon-cross {
+    display: inline;
+  }
+  
+  @media screen and (min-width: 600px) {
+
+    .navbar input[type="checkbox"]:not(:checked) + label .icon-menu {
+      display: none;
+    }
+    
+    .navbar input[type="checkbox"]:checked + label .icon-cross {
+      display: none;
+    }
+    
+    .navbar ul li {
+      display: inline;
+      padding: 10px;
+    }
+    
+    .navbar ul {
+      max-height: 100vh;
+      top: 10px;
+    }
+
+
+  }
