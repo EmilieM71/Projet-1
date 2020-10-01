@@ -1,141 +1,168 @@
 body {
   margin: 0;
-  flex-wrap: wrap;
-  width: 320px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #3e363f;
-}
-input,
-select,
-textarea {
-  margin: 0 3rem;
-  border-radius: 0.5em;
-  padding: 1rem 0;
-  /* border: 0.1rem solid rgba(0, 0, 0, 0.781); */
-  width: 77%;
-  box-shadow: 3px 3px 3px black;
-}
-label {
-  color: black;
-  padding: 0.4em 0;
-}
-.container-form {
-  background-color: #c5c5c5;
-  /* max-width: 320px; */
-  padding: 0.5em 0;
-}
-.title-form {
-  text-align: center;
-  margin: 0.3rem 0;
-  text-decoration: underline;
-  color: #4f6367;
-}
-#btn-form {
-  margin-top: 7px;
-  margin-right: 2em;
-  width: 33%;
-  align-self: flex-end;
-  color: rgba(27, 99, 12, 0.842);
-  box-shadow: 4px 5px 6px black;
-  border-radius: 0.7rem;
-}
-#btn-form:hover {
-  background-color: rgb(197, 197, 197, 0.3);
-  cursor: pointer;
-}
-/* Barre de navigation */
-.navbar {
-  position: relative;
-  display: flex;
-  background: #444;
-  color: #eee;
-  height: 2.4em;
-  align-items: center;
-  padding: 0 0.5em;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
 }
 
-.home-link {
-  flex-grow: 1;
+.fixmenu {
+  height: 58px;
 }
 
-.navbar ul {
-  max-height: 0;
-  transition: max-height 0.3s;
-  position: absolute;
-  background: #444;
-  top: 2.4em;
-  right: 0;
-  padding: 0 10px;
-  margin: 0;
-  overflow: hidden;
-}
-
-.navbar ul li {
-  list-style-type: none;
-  height: 44px;
+/* A definir*/
+.container {
+  max-width: 1140px;
+  margin: auto;
 }
 
 .logo {
+  max-width: 100px;
+}
+.header ul a {
+  color: #fff;
+}
+
+/* header */
+
+.header {
+  background-color: #333333;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #333333;
 }
 
-.navbar img {
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #414141;
+  color: #fff;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
   display: inline-block;
-  color: #eee;
-  margin: 0;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
 }
 
-.navbar input[type='checkbox'] {
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
   display: none;
 }
 
-.navbar input[type='checkbox']:checked ~ ul {
-  max-height: 100vh;
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
 }
 
-/* Cache les icons du menu*/
-.navbar input[type='checkbox'] + label span[class^='icon-'] {
-  display: none;
-}
-/* Affiche l'icon menu burger quand la checkbox n'est pas cochée*/
-.navbar input[type='checkbox']:not(:checked) + label .icon-menu {
-  display: inline;
-}
-/* Affiche l'icon menu close quand la checkbox EST cochée */
-.navbar input[type='checkbox']:checked + label .icon-cross {
-  display: inline;
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
 }
 
-@media screen and (min-width: 360px) {
-  .navbar input[type='checkbox']:not(:checked) + label .icon-menu {
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/***********************************************************
+-  Media Query (bootstrap size)
+***********************************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
     display: none;
   }
-
-  .navbar input[type='checkbox']:checked + label .icon-cross {
-    display: none;
-  }
-
-  .navbar ul li {
-    display: inline;
-    padding: 10px;
-  }
-
-  .navbar ul {
-    top: 10px;
-  }
 }
-@media screen and (min-width: 720px) {
-  body {
-    width: 100%;
-  }
-  #btn-form {
-    width: 25%;
-    margin-right: 11%;
-    margin-top: 2em;
-  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

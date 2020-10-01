@@ -1,12 +1,437 @@
+/*
+$$\      $$\ $$\ $$\       $$\       $$$$$$$$\        $$\           
+$$ | $\  $$ |\__|$$ |      $$ |      \__$$  __|       \__|          
+$$ |$$$\ $$ |$$\ $$ | $$$$$$$ |         $$ | $$$$$$\  $$\  $$$$$$\  
+$$ $$ $$\$$ |$$ |$$ |$$  __$$ |         $$ |$$  __$$\ $$ |$$  __$$\ 
+$$$$  _$$$$ |$$ |$$ |$$ /  $$ |         $$ |$$ |  \__|$$ |$$ /  $$ |
+$$$  / \$$$ |$$ |$$ |$$ |  $$ |         $$ |$$ |      $$ |$$ |  $$ |
+$$  /   \$$ |$$ |$$ |\$$$$$$$ |         $$ |$$ |      $$ |$$$$$$$  |
+\__/     \__|\__|\__| \_______|         \__|\__|      \__|$$  ____/ 
+                                                          $$ |      
+                                                          $$ |      
+                                                          \__|      
+*/
+
 /* Pour utliser la police Poppins (textes) */
 /* font-family: 'Poppins', sans-serif; */
 
 /* Pour utiliser la police Cabin (titres) */
 /* font-family: 'Cabin Sketch', cursive; */
 
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333333; /* a definir */
+  background-color: #f2f2f2;
+}
+
+/***********************************************************
+-  Titres
+***********************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cabin Sketch', cursive;
+  color: 000000; /* a definir */
+  padding: 0px; /* a definir */
+  margin: 0px; /* a definir */
+}
+
+h1 {
+  font-size: 72px; /* a definir */
+}
+
+h2 {
+  font-size: 42px; /* a definir */
+}
+
+h3 {
+  font-size: 36px; /* a definir */
+}
+
+h4 {
+  font-size: 24px; /* a definir */
+}
+
+h5 {
+  font-size: 20px; /* a definir */
+}
+
+p {
+  font-size: 16px; /* a definir */
+  line-height: 24px;
+}
+
+/***********************************************************
+-  Media
+***********************************************************/
+.img-responsive {
+  max-width: 100%;
+}
+
+/***********************************************************
+-  Actions
+***********************************************************/
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: '>';
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+ul.breadcrumb li:last-child a {
+  font-weight: bold;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #d55959;
+  text-decoration: none;
+}
+
+a {
+  /* Bouton*/
+  color: #d55959; /* a definir */
+  text-decoration: none; /* a definir */
+}
+
+a:hover {
+  color: red; /* a definir */
+}
+
+/* Bouton*/
+.btn {
+  display: inline-block !important;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 12px 0px 12px 0px;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #333333;
+}
+
+.btn-default:hover {
+  background-color: #828282;
+  color: #fff;
+}
+
+/* Tags*/
+.tags {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 4px 6px;
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.tags-big {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  font-size: 22px;
+}
+
+.tags-default {
+  color: #fff;
+  background-color: #333333;
+}
+
+.tags-default:hover {
+  background-color: #828282;
+  color: #fff;
+}
+
+/***********************************************************
+-  Align Blocks
+***********************************************************/
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/***********************************************************
+-  Blocks
+***********************************************************/
+
 footer {
   background-color: #444;
   color: #eee;
   margin: 0;
   width: 100%;
+}
+
+.main {
+  background-color: #fff;
+  padding: 80px;
+}
+
+/***********************************************************
+-  Pages : articles
+***********************************************************/
+
+/* 
+.article-filter{
+  background-color: #d7d7d7;
+}
+*/
+.mg-0-5 {
+  margin: 0px 5px;
+}
+
+.article-filtre-text {
+  font-size: 32px;
+  margin-right: 10px;
+  color: #b4b4b4;
+}
+
+.article-bloc {
+  background-color: #f2f2f2;
+  padding: 30px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px 0px 20px 0px;
+  margin-bottom: 25px;
+}
+
+.article-bloc > div {
+  padding: 25px;
+}
+
+.article-bloc > div:first-child {
+  flex: 1 30%;
+  display: inline-block;
+}
+
+.article-bloc > div:first-child > img {
+  border-radius: 20px 0px 20px 0px;
+  object-fit: cover;
+  height: 160px;
+  width: 300px;
+}
+
+.article-bloc > div:last-child {
+  flex: 1 70%;
+  display: inline-block;
+}
+
+/***********************************************************
+-  Pages : details
+***********************************************************/
+
+/***********************************************************
+-  Global Country color
+***********************************************************/
+
+/* America */
+
+.article-bloc-america {
+  border-bottom: #1e78a7 solid 5px;
+  border-bottom: #1e78a7 solid 5px;
+  /*box-shadow: 5px 2px 8px #166f6f;*/
+}
+
+.tags-america {
+  color: #fff;
+  background-color: #1e78a7;
+}
+
+.tags-america:hover {
+  background-color: #155373;
+  color: #fff;
+}
+
+/* Asia */
+
+.article-bloc-asia {
+  border-bottom: #eca11f solid 5px;
+  /* box-shadow: 5px 2px 8px #eca11f;*/
+}
+
+.tags-asia {
+  color: #fff;
+  background-color: #eca11f;
+}
+
+.tags-asia:hover {
+  background-color: #c08216;
+  color: #fff;
+}
+
+/* oceania */
+.article-bloc-oceania {
+  border-bottom: #883a85 solid 5px;
+  /* box-shadow: 5px 2px 8px #eca11f;*/
+}
+
+.tags-oceania {
+  color: #fff;
+  background-color: #883a85;
+}
+
+.tags-oceania:hover {
+  background-color: #61295f;
+  color: #fff;
+}
+
+/* africa */
+
+.article-bloc-africa {
+  border-bottom: #437315 solid 5px;
+  /* box-shadow: 5px 2px 8px #eca11f;*/
+}
+
+.tags-africa {
+  color: #fff;
+  background-color: #437315;
+}
+
+.tags-africa:hover {
+  background-color: #3a5a1a;
+  color: #fff;
+}
+
+/***********************************************************
+-  Media Query (bootstrap size)
+***********************************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  /***********************************************************
+-  Titres
+***********************************************************/
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Cabin Sketch', cursive;
+    color: 000000; /* a definir */
+    padding: 0px; /* a definir */
+    margin: 0px; /* a definir */
+  }
+
+  h1 {
+    font-size: 54px; /* a definir */
+  }
+
+  h2 {
+    font-size: 36px; /* a definir */
+  }
+
+  h3 {
+    font-size: 32px; /* a definir */
+  }
+
+  h4 {
+    font-size: 22px; /* a definir */
+  }
+
+  h5 {
+    font-size: 18px; /* a definir */
+  }
+
+  p {
+    font-size: 16px; /* a definir */
+    line-height: 24px;
+  }
+
+  .article-bloc {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px 0px 20px 0px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+
+  .article-bloc > div:first-child > img {
+    border-radius: 20px 0px 20px 0px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+
+  .main {
+    padding: 5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

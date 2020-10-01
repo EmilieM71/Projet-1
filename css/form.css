@@ -2,13 +2,16 @@ body {
   margin: 0;
   /* flex-wrap: wrap; */
   width: 320px;
+  font-family: 'Poppins', sans-serif;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #3e363f;
+  font-size: 16px;
+  line-height: 24px;
 }
+
 input,
 select,
 textarea {
@@ -28,24 +31,37 @@ label {
   padding: 0.4em 0;
 }
 .container-form {
-  background-color: #c5c5c5;
+  background-color: #f3f3f3;
   /* max-width: 320px; */
   padding: 0.5em 0;
 }
+
 .title-form {
   text-align: center;
   margin: 0.3rem 0;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #4f6367;
+  font-size: 42px;
 }
+.soulignage {
+  width: 90%;
+  height: 3px;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  margin-left: 5%;
+}
+
 #btn-form {
   margin-top: 7px;
-  margin-right: 2em;
+  margin-right: 1.4em;
   width: 33%;
   align-self: flex-end;
-  color: rgba(27, 99, 12, 0.842);
+  color: black;
   box-shadow: 4px 5px 6px black;
   border-radius: 0.7rem;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #d3d3d3;
 }
 #btn-form:hover {
   background-color: rgb(197, 197, 197, 0.3);
@@ -148,6 +164,14 @@ label {
   }
   select {
     width: 79%;
+  }
+  .title-form {
+    font-size: 54px;
+  }
+  label {
+    background-color: none;
+    width: 79%;
+    text-align: center;
   }
 }
 

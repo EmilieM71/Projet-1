@@ -8,32 +8,34 @@
     <!-- <link rel="stylesheet" href="../css/icons.css"> -->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Acceuil</title>
 </head>
 <body>
-        <header>
-            <nav class="navbar">
-                <a class="home-link" href="#"><img class="logo" src="images/logo_w.png" alt="" height="40px"></a>
-                <input id="menu-toggle" class="menu-toggle" type="checkbox"/>
-                <label for="menu-toggle">
-                    <span class="icon-menu"></span>
-                    <span class="icon-cross"></span>
-                </label>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Pays</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html"></a><img src="images/sources/logo_w.png" class="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="articles.html">Pays</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="fixmenu"></div>
+<!-- header:end -->
         <!-- <div>
             Une question, une hésitation, remplissez le questionnaire suivant, et nous nous chargerons de vous apporter une réponse !
         </div> -->
         <div class="container-form">
             <h2 class="title-form">Contact Us</h2>
+            <div class="soulignage"></div>
             <form action="" class="contact-form">
                 <label for="userFirstName"> Nom <span class="error-text">*</span>
                 </label><input type="text" id="userFirstName" name="Nom" placeholder="Doe"required>
