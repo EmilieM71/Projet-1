@@ -159,6 +159,48 @@ a:hover {
 }
 
 
+
+/* Tags*/
+.tags {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 4px 6px;
+    font-size: 11px;
+}
+
+.tags-default{
+    color:#FFF;
+    background-color: #333333;
+}
+
+.tags-default:hover{
+    background-color: #828282;
+    color:#FFF;
+}
+
+
+/* america */
+.tags-default{
+    color:#FFF;
+    background-color: #166f6f;
+}
+
+.tags-default:hover{
+    background-color: #166f6f;
+    color:#FFF;
+}
+
+
+
 /***********************************************************
  -  Blocks
 ***********************************************************/
@@ -175,6 +217,54 @@ footer {
     background-color: #FFF;
     padding:80px;
 }
+
+
+
+
+/***********************************************************
+ -  Pages : articles
+***********************************************************/
+
+.article-bloc{
+    background-color: #f2f2f2;
+    padding:30px;
+    border-bottom: #166f6f solid 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.article-bloc{
+    background-color: #f2f2f2;
+    padding:30px;
+    border-bottom: #166f6f solid 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.article-bloc > div {
+    padding:25px;
+  }
+
+
+.article-bloc > div:first-child {
+    flex: 1 30%;
+    display:inline-block;
+}
+
+
+.article-bloc > div:first-child > img {
+    max-width: 100%;
+}
+
+.article-bloc > div:last-child {
+flex: 1 70%;
+display:inline-block;
+}
+
+
+
+
 
 
 
