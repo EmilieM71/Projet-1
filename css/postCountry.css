@@ -32,7 +32,7 @@ p {
 ***********************************************************/
 
 /* Small devices (landscape phones, 576px and up) */
-@media(max-width:767px){
+@media screen and (max-width:767px){
     .firstSection {
         display: flex;
         flex-direction: column;
@@ -46,11 +46,12 @@ p {
         left: 0%;
         width: 95%;
         margin: 5px;
+        height: auto;
     }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media(min-width:768px){
+@media screen and (min-width:768px) and (max-width:992px) {
     .firstSection {
         display: flex;
         flex-direction: column;
@@ -62,13 +63,14 @@ p {
 
     .contSummaryFirstSection {
         left: 25%;
-        width: 50%
+        width: 50%;
+        height: auto;
     }
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media(min-width:992px) and (max-width:1200px){
+@media screen and (min-width:992px) and (max-width:1200px){
     .firstSection {
         display: flex;
         flex-direction: column;
@@ -80,7 +82,8 @@ p {
 
     .contSummaryFirstSection {
         left: 25%;
-        width: 50%
+        width: 50%;
+        height: auto;
     }
 
     p {
@@ -89,7 +92,7 @@ p {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media(min-width:1200px){
+@media screen and (min-width:1200px){
     p {
         font-size: 16px;
     }
