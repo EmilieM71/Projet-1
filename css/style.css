@@ -130,14 +130,18 @@ a:hover {
 
 .articleCarousel {
     display: flex;
-    justify-items: center;
+    justify-content: center;
+}
+
+.placeholderCarousel {
+    height: 10rem;
 }
 
 .articleCarousel a{
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    /* background-color: #d55959; */
+    justify-content: center;
+    align-items: center;
     background: url("../images/kenya/kenya1.jpg") no-repeat;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -145,7 +149,7 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     padding: 1em;
-    margin: 1em;
+    margin: 0;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 2px 8px #A8763D;
     background-position: center;
@@ -208,9 +212,18 @@ footer {
     height: 2rem;
 }
 
+aside{
+    height: 33rem;
+}
+
 div.map {
     display: flex;
     justify-content: center;
+}
+
+div.map img {
+    max-width: 100%;
+    height: auto;
 }
 
 .plan li {
@@ -240,26 +253,32 @@ div.map {
 @media(min-width:768px){
 
     .articleCarousel a {
-        max-width: 70%;
+        max-width: 90%;
     }
+
+    .placeholderCarousel {
+        height: 15rem;
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media(min-width:992px){
     
-    
+    .placeholderCarousel {
+        height: 20rem;
 
     .articleCarousel a {
-        max-width: 70%;
+        max-width: 90%;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
    
+    .placeholderCarousel {
+        height: 25rem;
     
     .articleCarousel a {
-        max-width: 70%;
+        max-width: 90%;
     }
 }
