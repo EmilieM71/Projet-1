@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/icons.css"> -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Acceuil</title>
+</head>
+<body>
+        <!-- header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html"><img src="../images/sources/logo_w.png" class="logo" alt="Logo de WildTrip"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="articles.html">Pays</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="fixmenu"></div>
+<!-- header:end -->
+        <!-- <div>
+            Une question, une hésitation, remplissez le questionnaire suivant, et nous nous chargerons de vous apporter une réponse !
+        </div> -->
+        <div class="container-form">
+            <h2 class="title-form">Contact Us</h2>
+            <div class="soulignage"></div>
+            <form class="contact-form">
+                <label for="userFirstName"> Nom <span class="error-text">*</span>
+                </label><input type="text" id="userFirstName" name="Nom" placeholder="Doe" required>
+                <div class="error-text error-msg" id="errorName">Il manque le nom</div>
+                <label for="userLastName"> Prénom<span class="error-text">*</span> 
+                </label><input type="text" id="userLastName" name="Prénom" placeholder="John" required>
+                <div class="error-text error-msg" id="errorName">Il manque le prénom</div>
+                <label for="userTelephone"> Numéro de téléphone <span class="error-text">*</span>
+                </label><input type="tel" id="userTelephone" name="Tél" placeholder="0669696969" required>
+                <div class="error-text error-msg" id="errorName">Il manque le numéro de téléphone</div>
+                <label for="userEmail"> Adresse email  <span class="error-text">*</span>
+                </label><input type="email" id="userEmail" name="email" placeholder="xyz@gmail.com" required>
+                <div class="error-text error-msg" id="errorName">Il manque l'adresse mail</div>
+                <label for="trip-destination">Quel pays vous intéresse ? </label>
+                <select name="select-destination" id="trip-destination">
+                    <option value="Pays 1">Pays 1</option>
+                    <option value="Pays 2">Pays 2</option>
+                    <option value="Pays 3">Pays 3</option>
+                    <option value="Pays 4">Pays 4</option>
+                </select>
+                <label for="textarea-form">Votre message <span class="error-text">*</span> 
+                </label>  
+                  
+                <textarea id="textarea-form" wrap="soft" maxlength="300" rows="3" placeholder="Type in your message" required>
+
+                </textarea>
+
+                <input type="submit" class="btn-form" value="Envoyer">            </form>
+        </div>
+    <footer>
+        <div>Plan du site</div>
+        <div>
+            <ul>
+                <!-- <li><a href="index.html">News</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="category.html"></a>Make your choice</li>
+            </ul>
+        </div>
+        <div>
+            <a href=""><img src="../images/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="../images/sources/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="../images/sources/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="../images/sources/pinterest.png" alt="Pinterest"></a>
+        </div>
+    </footer>
+    </html>

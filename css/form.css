@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input,
+select,
+textarea {
+  margin: 0 3rem;
+  border-radius: 0.5em;
+  padding: 1.5%;
+  padding-left: 0.5em;
+  /* border: 0.1rem solid rgba(0, 0, 0, 0.781); */
+  width: 77%;
+  box-shadow: 5px 2px 8px black;
+}
+select {
+  width: 81%;
+}
+label {
+  color: black;
+  padding: 0.4em 0;
+}
+.container-form {
+  background-color: #f3f3f3;
+  /* max-width: 320px; */
+  padding: 0.5em 0;
+}
+
+.title-form {
+  text-align: center;
+  margin: 0.3rem 0;
+  /* text-decoration: underline; */
+  color: #4f6367;
+  font-size: 42px;
+}
+.soulignage {
+  width: 90%;
+  height: 3px;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  margin-left: 5%;
+}
+
+.btn-form {
+  margin-top: 7px;
+  margin-right: 10%;
+  width: 33%;
+  align-self: flex-end;
+  color: black;
+  box-shadow: 5px 2px 8px black;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #d3d3d3;
+  border-radius: 20px 0 20px 0px;
+}
+.btn-form:hover {
+  background-color: #c5c5c54d;
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* Barre de navigation */
+.navbar {
+  position: relative;
+  display: flex;
+  background: #444;
+  color: #eee;
+  height: 2.4em;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.home-link {
+  flex-grow: 1;
+}
+
+.navbar ul {
+  max-height: 0;
+  transition: max-height 0.3s;
+  position: absolute;
+  background: #444;
+  top: 2.4em;
+  right: 0;
+  padding: 0 10px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  height: 44px;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img {
+  display: inline-block;
+  color: #eee;
+  margin: 0;
+}
+
+.navbar input[type='checkbox'] {
+  display: none;
+}
+
+.navbar input[type='checkbox']:checked ~ ul {
+  max-height: 100vh;
+}
+
+/* Cache les icons du menu*/
+.navbar input[type='checkbox'] + label span[class^='icon-'] {
+  display: none;
+}
+/* Affiche l'icon menu burger quand la checkbox n'est pas cochée*/
+.navbar input[type='checkbox']:not(:checked) + label .icon-menu {
+  display: inline;
+}
+/* Affiche l'icon menu close quand la checkbox EST cochée */
+.navbar input[type='checkbox']:checked + label .icon-cross {
+  display: inline;
+}
+
+@media screen and (min-width: 360px) {
+  .navbar input[type='checkbox']:not(:checked) + label .icon-menu {
+    display: none;
+  }
+
+  .navbar input[type='checkbox']:checked + label .icon-cross {
+    display: none;
+  }
+
+  .navbar ul li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    top: 10px;
+    height: 10vh;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    width: 100%;
+  }
+  .btn-form {
+    width: 25%;
+    margin-right: 10.5%;
+    margin-top: 2em;
+  }
+  .navbar ul {
+    top: 10px;
+    height: 10vh;
+  }
+  select {
+    width: 79%;
+  }
+  .title-form {
+    font-size: 54px;
+  }
+  label {
+    /* background-color: white; */
+    width: 79%;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+/* Gestion des erreurs */
+.error-text {
+  color: red;
+}
+
+.error-msg {
+  display: none;
+}
