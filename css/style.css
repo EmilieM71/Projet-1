@@ -79,43 +79,9 @@ p {
  -  Actions
 ***********************************************************/
 a {
-    /* Bouton*/
-    color:#d55959; /* a definir */
     text-decoration: none; /* a definir */
 }
 
-a:hover {
-    color:red; /* a definir */
-}
-
-/* Bouton*/
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn-default{
-    color:#FFF;
-    background-color: #333333;
-}
-
-.btn-default:hover{
-    background-color: #828282;
-    color:#FFF;
-}
 
 
 /***********************************************************
@@ -124,7 +90,7 @@ a:hover {
 
 .carousel {
     height: 50%;
-    margin: 5rem;
+    margin: 2rem;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -174,10 +140,7 @@ a:hover {
     opacity: 90%;
 }
 
-.articleCarousel a img {
-    height: 300px;
-    opacity: 0%;
-}
+
 
 .block-element {
     display: inline-block;
@@ -212,9 +175,6 @@ footer {
     height: 2rem;
 }
 
-aside{
-    height: 33rem;
-}
 
 div.map {
     display: flex;
@@ -230,6 +190,7 @@ div.map img {
     font-family: 'Poppins', sans-serif;
     font-size: 14px; 
     list-style: none;
+    color: #eee;
 }
 
 
@@ -266,6 +227,7 @@ div.map img {
     
     .placeholderCarousel {
         height: 20rem;
+    }
 
     .articleCarousel a {
         max-width: 90%;
@@ -277,7 +239,8 @@ div.map img {
    
     .placeholderCarousel {
         height: 25rem;
-    
+    }
+
     .articleCarousel a {
         max-width: 90%;
     }
