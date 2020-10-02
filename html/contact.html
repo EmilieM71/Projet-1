@@ -18,7 +18,7 @@
         <!-- header -->
   <header class="header">
     <div class="container">
-      <a href="index.html"></a><img src="images/sources/logo_w.png" class="logo"></a>
+      <a href="index.html"><img src="../images/sources/logo_w.png" class="logo" alt="Logo de WildTrip"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -36,16 +36,19 @@
         <div class="container-form">
             <h2 class="title-form">Contact Us</h2>
             <div class="soulignage"></div>
-            <form action="" class="contact-form">
+            <form class="contact-form">
                 <label for="userFirstName"> Nom <span class="error-text">*</span>
-                </label><input type="text" id="userFirstName" name="Nom" placeholder="Doe"required>
+                </label><input type="text" id="userFirstName" name="Nom" placeholder="Doe" required>
                 <div class="error-text error-msg" id="errorName">Il manque le nom</div>
                 <label for="userLastName"> Prénom<span class="error-text">*</span> 
                 </label><input type="text" id="userLastName" name="Prénom" placeholder="John" required>
+                <div class="error-text error-msg" id="errorName">Il manque le prénom</div>
                 <label for="userTelephone"> Numéro de téléphone <span class="error-text">*</span>
                 </label><input type="tel" id="userTelephone" name="Tél" placeholder="0669696969" required>
+                <div class="error-text error-msg" id="errorName">Il manque le numéro de téléphone</div>
                 <label for="userEmail"> Adresse email  <span class="error-text">*</span>
                 </label><input type="email" id="userEmail" name="email" placeholder="xyz@gmail.com" required>
+                <div class="error-text error-msg" id="errorName">Il manque l'adresse mail</div>
                 <label for="trip-destination">Quel pays vous intéresse ? </label>
                 <select name="select-destination" id="trip-destination">
                     <option value="Pays 1">Pays 1</option>
@@ -53,8 +56,9 @@
                     <option value="Pays 3">Pays 3</option>
                     <option value="Pays 4">Pays 4</option>
                 </select>
-                <label for="textarea-form">Votre message 
-                </label>    
+                <label for="textarea-form">Votre message <span class="error-text">*</span> 
+                </label>  
+                  
                 <textarea id="textarea-form" wrap="soft" maxlength="300" rows="3" placeholder="Type in your message" required>
 
                 </textarea>

@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  /* flex-wrap: wrap; */
-  width: 320px;
   font-family: 'Poppins', sans-serif;
 }
 .contact-form {
@@ -17,14 +15,14 @@ select,
 textarea {
   margin: 0 3rem;
   border-radius: 0.5em;
-  padding: 1rem;
+  padding: 1.5%;
   padding-left: 0.5em;
   /* border: 0.1rem solid rgba(0, 0, 0, 0.781); */
   width: 77%;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 5px 2px 8px black;
 }
 select {
-  width: 87%;
+  width: 81%;
 }
 label {
   color: black;
@@ -53,18 +51,19 @@ label {
 
 .btn-form {
   margin-top: 7px;
-  margin-right: 1.4em;
+  margin-right: 10%;
   width: 33%;
   align-self: flex-end;
   color: black;
-  box-shadow: 4px 5px 6px black;
-  border-radius: 0.7rem;
+  box-shadow: 5px 2px 8px black;
   font-family: 'Cabin Sketch', cursive;
   font-size: 20px;
   text-shadow: 1px 1px 1px #d3d3d3;
+  border-radius: 20px 0 20px 0px;
 }
 .btn-form:hover {
-  background-color: rgb(197, 197, 197, 0.3);
+  background-color: #c5c5c54d;
+  opacity: 0.8;
   cursor: pointer;
 }
 /* Barre de navigation */
@@ -153,9 +152,9 @@ label {
   body {
     width: 100%;
   }
-  #btn-form {
+  .btn-form {
     width: 25%;
-    margin-right: 11%;
+    margin-right: 10.5%;
     margin-top: 2em;
   }
   .navbar ul {
@@ -169,9 +168,10 @@ label {
     font-size: 54px;
   }
   label {
-    background-color: none;
+    /* background-color: white; */
     width: 79%;
     text-align: center;
+    font-size: 22px;
   }
 }
 

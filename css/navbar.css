@@ -142,7 +142,7 @@ body {
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .header li {
     float: left;
   }
