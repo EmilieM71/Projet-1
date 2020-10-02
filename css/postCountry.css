@@ -1,36 +1,72 @@
-.img-container {
-    min-width: 100%;
-    max-width: 100%;
-    max-height: 300px;
-    z-index: 1;
+/***********************************************************
+ - Body
+***********************************************************/
+body {
+    font-family: 'Poppins', sans-serif;
+    color:#333333; /* To define */
+    background-color:white; /* To define */
 }
 
-p {
-    font-size: 12px;
+/***********************************************************
+ - image
+***********************************************************/
+
+
+/***********************************************************
+ - main
+***********************************************************/
+
+.mainContainer {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    display: block;
+    align-items: center;
+
 }
-.contSummaryFirstSection {
-    background-color: #71BBD9;
-    width: 20%;
+
+.fullWidthImg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#mapFidji_224x225 {
+    width: 225px;
+    min-width: 24%;
+    height: auto;
+}
+
+/* horizontal centering of block type elements */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1em; /* largeur obligatoire pour être centré */
+}
+.addBoxShadow {
+    box-shadow: 5px 2px 8px #166f6f;
+}
+
+.addBorderRadius {
+    border-radius: 20px 0px 20px 0px;
+}
+
+.summarySection {
+    background-color: #71BBD9; /* To be defined according to the country */
+    box-sizing: border-box;
     max-height: 200px;
     padding : 10px;
     display: block;
-    position: absolute;
-    top: 10%; 
-    left: 60%;
     height:200px; 
     z-index:2;
     opacity: 0.7;
     border-bottom: #3D735A solid 5px;
     overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
     margin-bottom: 25px;
-    box-shadow: 5px 2px 8px #166f6f;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-}
 .col2 {
     position: relative;
     left: 25%;
@@ -41,8 +77,21 @@ article {
 }
 
 .float {
-    float: right;
+    float: center;
 }
+
+p {
+    font-size: 12px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+/***********************************************************
+ - Photo mosaic
+***********************************************************/
 
 .photo-mosaic {
     position: relative;
@@ -51,26 +100,47 @@ article {
 }
 
 .mosaic {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 .mosaic > div {
     border: 1px solid red;
-    width: 9%;
-    height: 10%;
-    margin-bottom: 1%;
 }
 
+.mosaic > div > img:hover {
+    width: 500px;
+    height: auto;
+}
 .mosaic > div:nth-child(1) {
-    width: 39%;
-    height: 19%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
 .mosaic > div:nth-child(2) {
-    width: 59%;
-    height: 29%;
+    grid-column: 3 / 6;
+    grid-row: 1 / 4;
+}
+
+.mosaic > div:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+
+.mosaic > div:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.mosaic > div:nth-child(5) {
+    grid-column: 1 / 4;
+    grid-row: 5 / 7;
+}
+
+.mosaic > div:nth-child(6) {
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
 }
 
 /***********************************************************
@@ -88,11 +158,17 @@ article {
         position: relative;
     }
 
-    .contSummaryFirstSection {
+    .summarySection {
         left: 0%;
         width: 95%;
         margin: 5px;
         height: auto;
+        
+    }
+
+    .float {
+        visibility: hidden;
+        display: none;
     }
 }
 
@@ -109,10 +185,11 @@ article {
         position: relative;
     }
 
-    .contSummaryFirstSection {
+    .summarySection {
         left: 25%;
         width: 50%;
         height: auto;
+
     }
 
 }
@@ -128,10 +205,12 @@ article {
         position: relative;
     }
 
-    .contSummaryFirstSection {
+    .summarySection {
         left: 25%;
         width: 50%;
         height: auto;
+        position: absolute;
+        top: 30%; 
     }
 
     p {
@@ -144,11 +223,18 @@ article {
     p {
         font-size: 16px;
     }
+    .summarySection {
+        width: 20%;
+        position: absolute;
+        top: 3em; 
+        left: 60%;
+    }
 } 
- 
-/* Couleurs : 
+/*
+
+ Couleurs : 
 #0B9ED9 bleu foncé
 #71BBD9 bleu moyen
 #BDEDF2 bleu clair
 #3D735A vert foncé
-#6FA66D vert clair */
+#6FA66D vert clair  */
