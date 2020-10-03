@@ -46,6 +46,15 @@ p {font-size: 12px;}
 }
 
 /***********************************************************
+ - Border
+***********************************************************/
+.border-art {
+    border-radius: var(--art-border-radius);
+    border-bottom: var(--art-border-bottom);
+    box-shadow: var(--art-box-shadow);
+}
+
+/***********************************************************
  - main
 ***********************************************************/
 
@@ -55,9 +64,11 @@ p {font-size: 12px;}
     text-align: justify;
     display: block;
     align-items: center;
-
 }
 
+/***********************************************************
+ - fullWidthImg and summarySection
+***********************************************************/
 .fullWidthImg {
     width: 100%;
     max-width: 100%;
@@ -66,25 +77,9 @@ p {font-size: 12px;}
     object-fit: cover;
 }
 
-#mapFidji_224x225 {
-    width: 225px;
-    min-width: 24%;
-    height: auto;
-}
-
-/* horizontal centering of block type elements */
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 14em; /* largeur obligatoire pour être centré */
-}
-
-.left {margin-left: 25%;}
-
-.border-art {
-    border-radius: var(--art-border-radius);
-    border-bottom: var(--art-border-bottom);
-    box-shadow: var(--art-box-shadow);
+.firstSection {
+    display: flex;
+    flex-direction: column;
 }
 
 .summarySection {
@@ -97,22 +92,58 @@ p {font-size: 12px;}
     z-index:2;
     opacity: 0.7;
     overflow: hidden;
-    margin-bottom: 25px;
-
+    margin: 1em;
 }
 
-.col2 {
+/***********************************************************
+ - Section history and culture
+***********************************************************/
+.secondSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* article.history */
+.history {
+    margin: 1em;
+    display: block;
+    padding: 1em;
+}
+
+/* div>h2.title title--h2 */
+
+/* div.col2 */
+/* .col2 {
     position: relative;
-    left: 25%;
-    width: 50%;
-    column-count: 2;
-    text-align: justify;
-    column-gap: 30px;
+} */
+/* div.col2>p>img.mapFidji_224x225 */
+.mapFidji_224x225 {
+    width: 225px;
+    max-width: 100%;
+    min-width: 24%;
+    height: auto;
 }
 
-.float {
-    float: center;
+.hide {
+    display: none;
 }
+/* horizontal centering of block type elements */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 14em; /* largeur obligatoire pour être centré */
+}
+
+.left {margin-left: 25%;}
+
+
+
+
+
+/* 
+.hide {
+    float: center;
+} */
 
 article {
     display: flex;
@@ -178,101 +209,91 @@ article {
 ***********************************************************/
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media screen and (max-width:767px){
-    .firstSection {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .firstSection > div {
-        position: relative;
-    }
+@media screen and (max-width:767px){
+    p {font-size: 13px;}
+    h2 {font-size: 2.5em;}
+    h3 { font-size: 2em;}
 
-    .summarySection {
-        left: 0%;
-        width: 95%;
-        margin: 5px;
-        height: auto;
-        
-    }
-
-    .float {
-        visibility: hidden;
-        display: none;
-    }
-    
-} */
+}
 
 
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width:768px) and (max-width:992px) {
-    .firstSection {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .firstSection > div {
+    p {font-size: 14px;}
+    .title--h2 {font-size: 3em;} /* To define */
+    .title--h3 {font-size: 2.5em;} /* To define */
+
+    .mainContainer {
+        width: 80%;
+    }   
+
+    /* .col2 {
         position: relative;
-    }
+        column-count: 2;
+        column-gap: 30px;
+    }  */
 
-    .summarySection {
-        left: 25%;
-        width: 50%;
-        height: auto;
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
     }
-
-    .title--h2 {font-size: 2.5em;} /* To define */
-    .title--h3 {font-size: 2em;} /* To define */
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) and (max-width:1200px){
-    .firstSection {
-        display: flex;
-        flex-direction: column;
+    p {font-size: 15px;}
+    .title--h2 {font-size: 3.5em;} /* To define */
+    .title--h3 {font-size: 3em;} /* To define */
+
+    .mainContainer {
+        width: 60%;
     }
-    
-    .firstSection > div {
+
+    .col2 {
         position: relative;
-    }
+        column-count: 2;
+        column-gap: 30px;
+    } 
 
-    .summarySection {
-        left: 25%;
-        width: 50%;
-        height: auto;
-        position: absolute;
-        top: 30%; 
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
     }
-
-    p {
-        font-size: 16px;
-    }
-    .title--h2 {font-size: 3em;} /* To define */
-    .title--h3 {font-size: 2em;} /* To define */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width:1200px){
-    p {
-        font-size: 16px;
+    p {font-size: 16px;}
+    .title--h2 {font-size: 4em;} /* To define */
+    .title--h3 {font-size: 3.5em;} /* To define */
+
+    .mainContainer {
+        width: 50%;
     }
+
     .summarySection {
-        width: 30%;
+        width:25em;
         position: absolute;
-        top: 4em; 
+        top: 3em; 
         right: 10em;
         max-height: 300px;
     }
-    .title--h2 {font-size: 3.5em;} /* To define */
-    .title--h3 {font-size: 2.5em;} /* To define */
-} 
-/*
 
- Couleurs : 
-#0B9ED9 bleu foncé
-#71BBD9 bleu moyen
-#BDEDF2 bleu clair
-#3D735A vert foncé
-#6FA66D vert clair  */
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
+    }
+
+    .col2 {
+        position: relative;
+        left: 25%;
+        width: 50%;
+        column-count: 2;
+        column-gap: 30px;
+    } 
+}
