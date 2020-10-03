@@ -1,16 +1,49 @@
+:root {
+    --main-color: #3ED3D6;
+    --secondary-color: #3BCCA6;
+    --light: rgba(250, 245, 242, 0.938);
+    --dark: #0D2B2B;
+  
+    --main-font: 'Poppins', sans-serif;
+    --title-font: 'Cabin Sketch', cursive;
+  
+    --text-font-size: 16pt;
+
+    --art-box-shadow: 5px 2px 8px var(--dark);
+    --art-border-radius: 20px 0px 20px 0px;
+    --art-border-bottom: var(--dark) solid 5px;
+}
+
 /***********************************************************
  - Body
 ***********************************************************/
 body {
-    font-family: 'Poppins', sans-serif;
-    color:#333333; /* To define */
-    background-color:white; /* To define */
+    font-family: var(--main-font);
+    color: black; /* To define */
+    background-color: var(--light); /* To define */
 }
+
+/***********************************************************
+ - Titles, paragraph
+***********************************************************/
+.title {
+    font-family: var(--title-font);
+    color: black; /* To define */
+    padding: 0px; /* To define */
+    margin: 0px; /* To define */
+}
+    .title--h1 {font-size: 2.5em;} /* To define */
+    .title--h2 {font-size: 2em;} /* To define */
+    .title--h3 {font-size: 1.5em;} /* To define */
+
+p {font-size: 12px;}
 
 /***********************************************************
  - image
 ***********************************************************/
-
+.img-responsive {
+    max-width: 100%;
+}
 
 /***********************************************************
  - main
@@ -43,28 +76,29 @@ body {
 .center {
     margin-left: auto;
     margin-right: auto;
-    width: 1em; /* largeur obligatoire pour être centré */
-}
-.addBoxShadow {
-    box-shadow: 5px 2px 8px #166f6f;
+    width: 14em; /* largeur obligatoire pour être centré */
 }
 
-.addBorderRadius {
-    border-radius: 20px 0px 20px 0px;
+.left {margin-left: 25%;}
+
+.border-art {
+    border-radius: var(--art-border-radius);
+    border-bottom: var(--art-border-bottom);
+    box-shadow: var(--art-box-shadow);
 }
 
 .summarySection {
-    background-color: #71BBD9; /* To be defined according to the country */
+    background-color: var(--secondary-color); /* To be defined according to the country */
     box-sizing: border-box;
+    height:auto; 
     max-height: 200px;
     padding : 10px;
     display: block;
-    height:200px; 
     z-index:2;
     opacity: 0.7;
-    border-bottom: #3D735A solid 5px;
     overflow: hidden;
     margin-bottom: 25px;
+
 }
 
 .col2 {
@@ -78,10 +112,6 @@ body {
 
 .float {
     float: center;
-}
-
-p {
-    font-size: 12px;
 }
 
 article {
@@ -148,7 +178,7 @@ article {
 ***********************************************************/
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (max-width:767px){
+/* @media screen and (max-width:767px){
     .firstSection {
         display: flex;
         flex-direction: column;
@@ -170,7 +200,8 @@ article {
         visibility: hidden;
         display: none;
     }
-}
+    
+} */
 
 
 
@@ -189,8 +220,10 @@ article {
         left: 25%;
         width: 50%;
         height: auto;
-
     }
+
+    .title--h2 {font-size: 2.5em;} /* To define */
+    .title--h3 {font-size: 2em;} /* To define */
 
 }
 
@@ -216,6 +249,8 @@ article {
     p {
         font-size: 16px;
     }
+    .title--h2 {font-size: 3em;} /* To define */
+    .title--h3 {font-size: 2em;} /* To define */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -224,11 +259,14 @@ article {
         font-size: 16px;
     }
     .summarySection {
-        width: 20%;
+        width: 30%;
         position: absolute;
-        top: 3em; 
-        left: 60%;
+        top: 4em; 
+        right: 10em;
+        max-height: 300px;
     }
+    .title--h2 {font-size: 3.5em;} /* To define */
+    .title--h3 {font-size: 2.5em;} /* To define */
 } 
 /*
 
