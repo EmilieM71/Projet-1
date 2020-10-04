@@ -8,12 +8,8 @@
     --title-font: 'Cabin Sketch', cursive;
   
     --text-font-size: 16pt;
-
-    --art-box-shadow: 5px 2px 8px var(--dark);
-    --art-border-radius: 20px 0px 20px 0px;
-    --art-border-bottom: var(--dark) solid 5px;
 }
-
+.logo {height: 40px}
 /***********************************************************
  - Body
 ***********************************************************/
@@ -45,13 +41,20 @@ p {font-size: 12px;}
     max-width: 100%;
 }
 
+.fullImgInDiv {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /***********************************************************
  - Border
 ***********************************************************/
 .border-art {
-    border-radius: var(--art-border-radius);
-    border-bottom: var(--art-border-bottom);
-    box-shadow: var(--art-box-shadow);
+    border-radius: 20px 0px 20px 0px;
+    border-bottom: var(--dark) solid 5px;
+    box-shadow: 5px 2px 8px var(--dark);
 }
 
 /***********************************************************
@@ -69,12 +72,8 @@ p {font-size: 12px;}
 /***********************************************************
  - fullWidthImg and summarySection
 ***********************************************************/
-.fullWidthImg {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.fullImgInDiv {
     max-height: 300px;
-    object-fit: cover;
 }
 
 .firstSection {
@@ -128,8 +127,10 @@ p {font-size: 12px;}
 
 /********** Create slider **********/
 .slider {
-    width: 500px;
-    height: 330px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 330px;
+    height: auto;
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
@@ -165,6 +166,17 @@ p {font-size: 12px;}
     100% {transform: translateX(0px);}
     
 }
+
+.artWithP {
+    padding: 1em;
+    margin: 1em;
+}
+
+.dish {
+    max-width: 300px;
+    float: left;
+    margin: 0 1em;
+}
 /***********************************************************
         Photo mosaic
 ***********************************************************/
@@ -173,50 +185,6 @@ p {font-size: 12px;}
     margin: 1em;
     padding: 1em;
 }
-
-/* .mosaic {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.mosaic > div {
-    border: 1px solid red;
-}
-
-.mosaic > div > img:hover {
-    width: 500px;
-    height: auto;
-}
-.mosaic > div:nth-child(1) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-}
-
-.mosaic > div:nth-child(2) {
-    grid-column: 3 / 6;
-    grid-row: 1 / 4;
-}
-
-.mosaic > div:nth-child(3) {
-    grid-column: 1 / 3;
-    grid-row: 3 / 5;
-}
-
-.mosaic > div:nth-child(4) {
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
-}
-
-.mosaic > div:nth-child(5) {
-    grid-column: 1 / 4;
-    grid-row: 5 / 7;
-}
-
-.mosaic > div:nth-child(6) {
-    grid-column: 4 / 6;
-    grid-row: 4 / 7;
-} */
 
 /***********************************************************
  -  Media Query (bootstrap size)
@@ -242,18 +210,11 @@ p {font-size: 12px;}
         width: 80%;
     }   
 
-    /* .col2 {
-        position: relative;
-        column-count: 2;
-        column-gap: 30px;
-    }  */
-
     .hide {
         display: block;
         float: right;
         margin: 0 2em;
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -266,12 +227,6 @@ p {font-size: 12px;}
         width: 60%;
     }
 
-    .col2 {
-        position: relative;
-        column-count: 2;
-        column-gap: 30px;
-    } 
-
     .hide {
         display: block;
         float: right;
@@ -283,52 +238,57 @@ p {font-size: 12px;}
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 10px;
         grid-auto-rows: minmax(50px, auto);
-        width: 500px;
+        width: 100%;
         height: auto;
         animation: none;
     }
 
-    .slide {float: none;}
+    .slide {float: none; border: 1px solid red;}
 
-    .slider {height: auto;}
+    .slider {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .mosaicImg {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
 
     .slider > div > div:nth-child(1) {
         grid-column: 1 / 3;
         grid-row: 1 / 3;
     }
-    .slider > div > div:nth-child(1) > img {width: 194px; height: auto;}
     
     .slider > div > div:nth-child(2) {
         grid-column: 3 / 6;
         grid-row: 1 / 4;
     }
-    .slider > div > div:nth-child(2) > img {width: 296px; height: auto;}
     
     .slider > div > div:nth-child(3) {
         grid-column: 1 / 3;
         grid-row: 3 / 5;
     }
-    .slider > div > div:nth-child(3) > img {width: 194px; height: auto;}
     
     .slider > div > div:nth-child(4) {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
     }
-    .slider > div > div:nth-child(4) > img {width: 92px; height: auto;}
     
     .slider > div > div:nth-child(5) {
         grid-column: 1 / 4;
         grid-row: 5 / 7;
     }
-    .slider > div > div:nth-child(5) > img {width: 298px; height: auto;}
     
     .slider > div > div:nth-child(6) {
         grid-column: 4 / 6;
         grid-row: 4 / 7;
     }
-    .slider > div > div:nth-child(6) > img {width: 192px; height: auto;}
 
-    .mosaicImg {width: 50px; height: 30px;}
+    /* .mosaicImg {width: 50px; height: 30px;} */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -354,12 +314,4 @@ p {font-size: 12px;}
         float: right;
         margin: 0 2em;
     }
-
-    .col2 {
-        position: relative;
-        left: 25%;
-        width: 50%;
-        column-count: 2;
-        column-gap: 30px;
-    } 
 }
