@@ -247,7 +247,28 @@ div.map img {
     .articleCarousel a {
         max-width: 90%;
     }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
@@ -259,4 +280,25 @@ div.map img {
     .articleCarousel a {
         max-width: 90%;
     }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    
 }
