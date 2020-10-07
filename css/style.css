@@ -64,6 +64,7 @@ p {
   line-height: 24px;
 }
 
+
 /***********************************************************
 -  Media
 ***********************************************************/
@@ -168,6 +169,74 @@ a:hover {
   padding: 4px 6px;
   font-size: 11px;
   margin-left: 8px;
+    text-decoration: none; /* a definir */
+}
+
+
+
+/***********************************************************
+ -  Blocks
+***********************************************************/
+
+/* body {
+    background-image: url("../images/sources/testBG2.png");
+} */
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+.carousel {
+    height: 50%;
+    margin: 2rem;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.articleCarousel {
+    display: flex;
+    justify-content: center;
+}
+
+.placeholderCarousel {
+    height: 10rem;
+}
+
+.articleCarousel a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/kenya/kenya1.jpg") no-repeat;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 1em;
+    margin: 0;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 2px 8px #A8763D;
+    background-position: center;
+}
+
+.textArticleCarousel h2 {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel p {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel {
+    display: flex;
+    background: #ffcb8f;
+    box-shadow: 5px 2px 8px black;
+    border-radius: 8px 8px 8px 8px;
+    flex-direction: column;
+    opacity: 90%;
 }
 
 .tags-big {
@@ -215,11 +284,18 @@ a:hover {
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 /***********************************************************
 -  Blocks
 ***********************************************************/
+=======
+>>>>>>> accueil
 
+.block-element {
+    display: inline-block;
+}
 footer {
+<<<<<<< HEAD
   background-color: #444;
   color: #eee;
   margin: 0;
@@ -248,6 +324,61 @@ footer {
   font-size: 32px;
   margin-right: 10px;
   color: #b4b4b4;
+=======
+    background-color: #444;
+    color: #eee;
+    margin: 0;
+    max-height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.socialLinks {
+    display: flex;
+    width: 5rem;
+    flex-wrap: wrap;
+    
+}
+
+.socialLinks a {
+    width: 2rem;
+    height: 2rem;
+    margin: 2px;
+}
+
+.socialLinks a img {
+    justify-self: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+div.map {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+div.map img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plan li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; 
+    list-style: none;
+}
+
+.plan li p{
+    color: #eee;
+>>>>>>> accueil
 }
 
 .article-bloc {
@@ -306,13 +437,23 @@ footer {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /* Asia */
+=======
+    .articleCarousel a {
+        max-width: 90%;
+    }
+
+    .placeholderCarousel {
+        height: 15rem;
+>>>>>>> accueil
 
 .article-bloc-asia {
   border-bottom: #eca11f solid 5px;
   /* box-shadow: 5px 2px 8px #eca11f;*/
 }
 
+<<<<<<< HEAD
 .tags-asia {
   color: #fff;
   background-color: #eca11f;
@@ -430,9 +571,43 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+=======
+/* Large devices (desktops, 992px and up) */
+@media(min-width:992px){
+    
+    .placeholderCarousel {
+        height: 20rem;
+    }
+
+    .articleCarousel a {
+        max-width: 90%;
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+>>>>>>> accueil
 }
 
+
 /* Extra large devices (large desktops, 1200px and up) */
+<<<<<<< HEAD
 @media (min-width: 1200px) {
 }
 
@@ -458,3 +633,36 @@ footer {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+=======
+@media(min-width:1200px){
+   
+    .placeholderCarousel {
+        height: 25rem;
+    }
+
+    .articleCarousel a {
+        max-width: 90%;
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    
+}
+>>>>>>> accueil
