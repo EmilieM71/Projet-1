@@ -67,6 +67,7 @@ p {
     font-size: 14px; /* a definir */
 }
 
+
 /***********************************************************
  -  Media
 ***********************************************************/
@@ -78,59 +79,137 @@ p {
  -  Actions
 ***********************************************************/
 a {
-    /* Bouton*/
-    color:#d55959; /* a definir */
     text-decoration: none; /* a definir */
 }
 
-a:hover {
-    color:red; /* a definir */
-}
-
-/* Bouton*/
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn-default{
-    color:#FFF;
-    background-color: #333333;
-}
-
-.btn-default:hover{
-    background-color: #828282;
-    color:#FFF;
-}
 
 
 /***********************************************************
  -  Blocks
 ***********************************************************/
 
-footer {
-    background-color: #444;
-    color: #eee;
+/* body {
+    background-image: url("../images/sources/testBG2.png");
+} */
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+.carousel {
+    height: 50%;
+    margin: 2rem;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.articleCarousel {
+    display: flex;
+    justify-content: center;
+}
+
+.placeholderCarousel {
+    height: 10rem;
+}
+
+.articleCarousel a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/kenya/kenya1.jpg") no-repeat;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 1em;
     margin: 0;
-    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 2px 8px #A8763D;
+    background-position: center;
+}
+
+.textArticleCarousel h2 {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel p {
+    color: black;
+    text-align: center;
+}
+
+.textArticleCarousel {
+    display: flex;
+    background: #ffcb8f;
+    box-shadow: 5px 2px 8px black;
+    border-radius: 8px 8px 8px 8px;
+    flex-direction: column;
+    opacity: 90%;
 }
 
 
 
+.block-element {
+    display: inline-block;
+}
 
+footer {
+    background-color: #444;
+    color: #eee;
+    margin: 0;
+    max-height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.socialLinks {
+    display: flex;
+    width: 5rem;
+    flex-wrap: wrap;
+    
+}
+
+.socialLinks a {
+    width: 2rem;
+    height: 2rem;
+    margin: 2px;
+}
+
+.socialLinks a img {
+    justify-self: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+div.map {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+div.map img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plan li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; 
+    list-style: none;
+}
+
+.plan li p{
+    color: #eee;
+}
 
 
 
@@ -150,16 +229,77 @@ footer {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media(min-width:768px){
 
+    .articleCarousel a {
+        max-width: 90%;
+    }
+
+    .placeholderCarousel {
+        height: 15rem;
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media(min-width:992px){
+    
+    .placeholderCarousel {
+        height: 20rem;
+    }
 
+    .articleCarousel a {
+        max-width: 90%;
+    }
 
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
+   
+    .placeholderCarousel {
+        height: 25rem;
+    }
 
+    .articleCarousel a {
+        max-width: 90%;
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    
 }

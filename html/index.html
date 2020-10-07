@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/icons.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icons.css" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Accueil</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a class="home-link" href="#"><img class="logo" src="../images/sources/logo_w.png" alt="" height="40px"></a>
-            <input id="menu-toggle" class="menu-toggle" type="checkbox"/>
-            <label for="menu-toggle">
-                <span class="icon-menu"></span>
-                <span class="icon-cross"></span>
-            </label>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Pays</a></li>
-            </ul>
-        </nav>
-    </header>
+  </head>
+    
+  
+  <body>
+    <header class="header">
+        <div class="container">
+          <a href="index.html"><img src="../images/sources/logo_w.png" class="logo" alt="Logo de WildTrip"></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="articles.html">Pays</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    <main>
+        <section class="carousel">
+            <div class="articleCarousel">
+                <a href="article.html" title="Lien vers l'article ???">
+                    <div class="placeholderCarousel"></div>
+                    <div class="textArticleCarousel">
+                        <h2 class="block-element" >Lorem ipsum</h2>
+                        <p class="block-element" >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="articleCarousel">
+                <a href="article.html">
+                    <img src="../images/sources/image.png" alt="">
+                </a>
+                <h1>Lorem ipsum</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="articleCarousel">
+                <a href="article.html"><img src="../images/sources/image.png" alt=""></a>
+                <h1>Lorem ipsum</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div> -->
+        </section>
+
+        <section>
+            <div class="map">
+                <img src="../images/sources/map-3828935_960_720.png" alt="Map of locations">
+            </div>
+        </section>
+    </main>
+
 
     <footer>
-        <div>Plan du site</div>
+        <div><p>Plan du site</p></div>
         <div>
-            <ul>
-                <!-- <li><a href="index.html">News</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="category.html"></a>Make your choice</li>
+            <ul class="plan">
+                <li><a href="contact.html" title="Vers formulaire de contact"><p>Contact</p></a></li>
+                <li><a href="category.html" title="Vers la liste des articles"></a><p>Make your choice</p></li>
             </ul>
         </div>
-        <div>
-            <a href=""><img src="../images/instagram.png" alt="Instagram"></a>
-            <a href=""><img src="../images/sources/facebook.png" alt="Facebook"></a>
-            <a href=""><img src="../images/sources/twitter.png" alt="Twitter"></a>
-            <a href=""><img src="../images/sources/pinterest.png" alt="Pinterest"></a>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com" title="Visitez notre page Facebook"><img src="../images/sources/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" title="Visitez notre page Twitter"><img src="../images/sources/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" title="Visitez notre page Instagram"><img src="../images/sources/instagram.png" alt="Instagram"></a>
+            <a href="https://www.pinterest.com" title="Visitez notre page Pinterest"><img src="../images/sources/pinterest.png" alt="Pinterest"></a>
         </div>
     </footer>
-</body>
+  </body>
+</html>
