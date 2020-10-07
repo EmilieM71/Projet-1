@@ -13,25 +13,22 @@
     <title>Accueil</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <a class="home-link" href="#"><img class="logo" src="../images/sources/logo_w.png" alt=""></a>
-            <input id="menu-toggle" class="menu-toggle" type="checkbox"/>
-            <label for="menu-toggle">
-                <span class="icon-menu"></span>
-                <span class="icon-cross"></span>
-            </label>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Pays</a></li>
+            <a href="index.html"><img src="../images/sources/logo_w.png" class="logo" alt="Logo de WildTrip"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="articles.html">Pays</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        </header>
 
     <main>
         <div>
+            <div class="fixmenu"></div>
             <img class="fullImgInDiv" src="../images/fidji/fidji-1400x800.jpg" alt="Image paysage du pays">
         </div>
         <div class="mainContainer">
@@ -65,7 +62,16 @@
                     </div>
                     <div class="slider ">
                         <div class="slides mosaic">
-                            <div class="slide"><img class="mosaicImg fullImgInDiv" src="../images/fidji/Taveuni_500x374.jpg" alt=""></div>
+                            <div class="slide">
+                                <img class="mosaicImg fullImgInDiv open-modal" src="../images/fidji/Taveuni2.jpg" alt="" onclick="zoomImg('../images/fidji/Taveuni2.jpg')">
+                            </div>
+                            <div class="modal">
+                                <div class="border-art modal-inner">
+                                    <h3>Taveuni</h3>
+                                    <p>Taveuni est la troisième plus grande île des îles Fidji, avec sa superficie de 435 km2. Elle a une population avoisinant les 9 000 habitants. La flore abondante de l'île lui a valu son surnom d'« Île jardin des Fidji ». Elle est une destination touristique populaire.</p>
+                                    <button class="close-modal"><span class="icon-cross"></span></button>
+                                </div>
+                            </div>
                             <div class="slide"><img class="mosaicImg fullImgInDiv" src="../images/fidji/Garden_500x341.jpg" alt=""></div>
                             <div class="slide"><img class="mosaicImg fullImgInDiv" src="../images/fidji/Koroyanitu_500x333.jpg" alt=""></div>
                             <div class="slide"><img class="mosaicImg fullImgInDiv" src="../images/fidji/Nanuya_500x375.jpg" alt=""></div>
@@ -112,4 +118,5 @@
             <a href=""><img src="../images/sources/pinterest.png" alt="Pinterest"></a>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
