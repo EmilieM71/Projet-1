@@ -26,30 +26,18 @@
     
   
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="home-link" href="#" >
-          <img
-            class="logo"
-            src="../images/sources/logo_w.png"
-            alt=""
-            height="40px"
-          />
-        </a>
-        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
-        <label for="menu-toggle">
-          <span class="icon-menu"></span>
-          <span class="icon-cross"></span>
-        </label>
-    
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Pays</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="header">
+        <div class="container">
+          <a href="index.html"><img src="../images/sources/logo_w.png" class="logo" alt="Logo de WildTrip"></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="articles.html">Pays</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
     <main>
         <section class="carousel">
             <div class="articleCarousel">
