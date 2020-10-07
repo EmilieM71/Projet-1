@@ -1,0 +1,48 @@
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #d7871e; /* a definir */
+} 
+
+
+.btn-default{
+    color:#FFF;
+    background-color: #d7871e;
+}
+
+.btn-default:hover{
+    background-color: #eca11f;
+    color:#FFF;
+}
+
+
+
+a {
+    /* Bouton*/
+    color:#d7871e; /* a definir */
+    text-decoration: none; /* a definir */
+}
+
+a:hover {
+    color: #eca11f; /* a definir */
+}
+
+
+  
+.header {
+    background-color: #eca11f;
+}
+
+.header ul {
+background-color: #eca11f;
+
+}
+  
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #d7871e;
+  color: #FFF;
+}
