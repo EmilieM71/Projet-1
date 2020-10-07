@@ -13,10 +13,8 @@ function filterCountries(country) {
 
 
 
-const cards = document.querySelector(".article-section");
-
 // Creation d'une base template pour une card
-function template_coutrny_card(obj) {
+function template_country_card(obj) {
 
     const card = document.createElement("div");
     card.classList.add("article-bloc");
@@ -24,7 +22,7 @@ function template_coutrny_card(obj) {
     card.classList.add("article-bloc-"+obj.category_key);
     card.dataset.filterBlock = obj.category_key;
 
-    cards.appendChild(card);
+    countriesCards.appendChild(card);
 
     // Gestion de l'image
     const cardPictures = document.createElement("div");
@@ -59,8 +57,27 @@ function template_coutrny_card(obj) {
 
     const cardContentButton = document.createElement("a");
     cardContentButton.textContent = "En voir plus";
-    cardContentButton.href = obj.slug+".html";
+    cardContentButton.href = obj.url;
     cardContentButton.classList.add("btn");
     cardContentButton.classList.add("btn-default");
     cardContentButtonContainer.appendChild(cardContentButton);
 }
+
+
+
+
+
+
+
+// Init
+const countriesCards = document.querySelector(".article-section");
+countriesDatabase.forEach(function (item) {
+    template_country_card(item);
+  });
+
+
+
+
+
+
+
