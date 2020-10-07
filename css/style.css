@@ -284,18 +284,15 @@ body {
   justify-content: flex-end;
 }
 
-<<<<<<< HEAD
 /***********************************************************
 -  Blocks
 ***********************************************************/
-=======
->>>>>>> accueil
 
 .block-element {
     display: inline-block;
 }
+
 footer {
-<<<<<<< HEAD
   background-color: #444;
   color: #eee;
   margin: 0;
@@ -324,7 +321,6 @@ footer {
   font-size: 32px;
   margin-right: 10px;
   color: #b4b4b4;
-=======
     background-color: #444;
     color: #eee;
     margin: 0;
@@ -378,7 +374,6 @@ div.map img {
 
 .plan li p{
     color: #eee;
->>>>>>> accueil
 }
 
 .article-bloc {
@@ -437,23 +432,23 @@ div.map img {
   color: #fff;
 }
 
-<<<<<<< HEAD
-/* Asia */
-=======
-    .articleCarousel a {
+    
+.articleCarousel a {
         max-width: 90%;
     }
 
-    .placeholderCarousel {
+    
+.placeholderCarousel {
         height: 15rem;
->>>>>>> accueil
+}
+        /* Asia */
+
 
 .article-bloc-asia {
   border-bottom: #eca11f solid 5px;
   /* box-shadow: 5px 2px 8px #eca11f;*/
 }
 
-<<<<<<< HEAD
 .tags-asia {
   color: #fff;
   background-color: #eca11f;
@@ -571,7 +566,6 @@ div.map img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-=======
 /* Large devices (desktops, 992px and up) */
 @media(min-width:992px){
     
@@ -602,12 +596,10 @@ div.map img {
         height: 2.5rem;
     }
     
->>>>>>> accueil
 }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
-<<<<<<< HEAD
 @media (min-width: 1200px) {
 }
 
@@ -633,7 +625,7 @@ div.map img {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-=======
+
 @media(min-width:1200px){
    
     .placeholderCarousel {
@@ -665,4 +657,3 @@ div.map img {
     
     
 }
->>>>>>> accueil
