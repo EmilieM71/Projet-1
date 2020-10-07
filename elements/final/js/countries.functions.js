@@ -2,10 +2,9 @@ let filter_active = "all";
 
 function filterCountries(country) {
     const all_countries = document.querySelectorAll('[data-filter-block]');
-    
+
     if(filter_active === country){
         filter_active = "all";
-        console.log("Filtre deja active on toggle manuelement");
     }else{
         filter_active = country;
     }
@@ -14,9 +13,7 @@ function filterCountries(country) {
         for (let i = 0; i < all_countries.length; i++) {
             all_countries[i].style.display = "flex";
         }
-        console.log("Si all alors on affiche tout");
     }else{
-        console.log("Sinon on selectionne le current");
         for (let i = 0; i < all_countries.length; i++) {
             if (all_countries[i].dataset.filterBlock === country) {
                 all_countries[i].style.display = "flex";
@@ -26,6 +23,10 @@ function filterCountries(country) {
         }
     }
 }
+
+
+
+
 
 
 
