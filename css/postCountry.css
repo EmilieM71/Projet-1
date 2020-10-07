@@ -1,46 +1,33 @@
 :root {
-    --main-color: #3ED3D6;
-    --secondary-color: #3BCCA6;
-    --light: rgba(250, 245, 242, 0.938);
-    --dark: #0D2B2B;
+    /* --main-color: #C07DF0;
+    --secondary-color: #D7A9F8; */
+    --light: #F2E1FE; /* art-modal */
+    --dark: #9036D0; /* nav titles and border */
   
-    --main-font: 'Poppins', sans-serif;
-    --title-font: 'Cabin Sketch', cursive;
-  
-    --text-font-size: 16pt;
-}
-.logo {height: 40px}
-/***********************************************************
- - Body
-***********************************************************/
-body {
-    font-family: var(--main-font);
-    color: black; /* To define */
-    background-color: var(--light); /* To define */
 }
 
-/***********************************************************
- - Titles, paragraph
-***********************************************************/
-.title {
-    font-family: var(--title-font);
-    color: black; /* To define */
-    padding: 0px; /* To define */
-    margin: 0px; /* To define */
+.header {
+    background-color: var(--dark);
 }
-    .title--h1 {font-size: 2.5em;} /* To define */
-    .title--h2 {font-size: 2em;} /* To define */
-    .title--h3 {font-size: 1.5em;} /* To define */
 
-p {font-size: 12px;}
+.header ul {
+    background-color: var(--dark);
+}
+/***********************************************************
+ -  Titres
+***********************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--dark);
+} 
 
 /***********************************************************
  - image
 ***********************************************************/
-.img-responsive {
-    max-width: 100%;
-}
-
 .fullImgInDiv {
     width: 100%;
     max-width: 100%;
@@ -49,13 +36,12 @@ p {font-size: 12px;}
 }
 
 /***********************************************************
- - Border
+ - modal
 ***********************************************************/
-.border-art {
-    border-radius: 20px 0px 20px 0px;
-    border-bottom: var(--dark) solid 5px;
-    box-shadow: 5px 2px 8px var(--dark);
-}
+
+  .modal-inner {
+    background-color: var(--light); /* To be defined according to the country */
+  }
 
 /***********************************************************
  - main
@@ -82,7 +68,7 @@ p {font-size: 12px;}
 }
 
 .summarySection {
-    background-color: var(--secondary-color); /* To be defined according to the country */
+    background-color: var(--light); /* To be defined according to the country */
     box-sizing: border-box;
     height:auto; 
     max-height: 200px;
@@ -129,7 +115,7 @@ p {font-size: 12px;}
 .slider {
     max-width: 500px;
     width: 100%;
-    max-height: 330px;
+    max-height: 300px;
     height: auto;
     overflow: hidden;
     margin-right: auto;
@@ -192,9 +178,6 @@ p {font-size: 12px;}
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width:767px){
-    p {font-size: 13px;}
-    h2 {font-size: 2.5em;}
-    h3 { font-size: 2em;}
 
 }
 
@@ -202,9 +185,6 @@ p {font-size: 12px;}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width:768px) and (max-width:992px) {
-    p {font-size: 14px;}
-    .title--h2 {font-size: 3em;} /* To define */
-    .title--h3 {font-size: 2.5em;} /* To define */
 
     .mainContainer {
         width: 80%;
@@ -219,9 +199,6 @@ p {font-size: 12px;}
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
-    p {font-size: 15px;}
-    .title--h2 {font-size: 3.5em;} /* To define */
-    .title--h3 {font-size: 3em;} /* To define */
 
     .mainContainer {
         width: 60%;
@@ -263,27 +240,27 @@ p {font-size: 12px;}
         grid-row: 1 / 3;
     }
     
-    .slider > div > div:nth-child(2) {
+    .slider > div > div:nth-child(3) {
         grid-column: 3 / 6;
         grid-row: 1 / 4;
     }
     
-    .slider > div > div:nth-child(3) {
+    .slider > div > div:nth-child(4) {
         grid-column: 1 / 3;
         grid-row: 3 / 5;
     }
     
-    .slider > div > div:nth-child(4) {
+    .slider > div > div:nth-child(5) {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
     }
     
-    .slider > div > div:nth-child(5) {
+    .slider > div > div:nth-child(6) {
         grid-column: 1 / 4;
         grid-row: 5 / 7;
     }
     
-    .slider > div > div:nth-child(6) {
+    .slider > div > div:nth-child(7) {
         grid-column: 4 / 6;
         grid-row: 4 / 7;
     }
@@ -293,9 +270,6 @@ p {font-size: 12px;}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width:1200px){
-    p {font-size: 16px;}
-    .title--h2 {font-size: 4em;} /* To define */
-    .title--h3 {font-size: 3.5em;} /* To define */
 
     .mainContainer {
         width: 50%;
@@ -304,7 +278,7 @@ p {font-size: 12px;}
     .summarySection {
         width:25em;
         position: absolute;
-        top: 3em; 
+        top: 5em; 
         right: 10em;
         max-height: 300px;
     }

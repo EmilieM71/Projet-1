@@ -13,17 +13,23 @@ $$  /   \$$ |$$ |$$ |\$$$$$$$ |         $$ |$$ |      $$ |$$$$$$$  |
 */
 
 
-/* Pour utliser la police Poppins (textes) */
-/* font-family: 'Poppins', sans-serif; */
+:root {
+  --main-font: 'Poppins', sans-serif; /* Use for text */
+  --title-font: 'Cabin Sketch', cursive; /* Use for titles */
 
-/* Pour utiliser la police Cabin (titres) */
-/* font-family: 'Cabin Sketch', cursive; */
+  --main-color: #333333; /* for background color navigation bar, footer and text color */
+  --second-color:  #fff; /* for text color of navigation bar, footer and body background color */
+}
 
+.logo {
+  height: 40px; 
+  max-width: 100px;
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color:#333333; /* a definir */
-    background-color:#efefef;
+    font-family: var(--main-font);
+    color:var(--main-color); /* a definir */
+    background-color: var(--second-color);
 }
 
 
@@ -36,8 +42,8 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Cabin Sketch', cursive;
-    color: 000000; /* a definir */
+    font-family: var(--title-font);
+    color: var(--main-color);
     padding:0px; /* a definir */
     margin:0px; /* a definir */
 } 
@@ -76,6 +82,31 @@ p {
 }
 
 /***********************************************************
+ - modal
+***********************************************************/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-inner {
+  max-width: 800px;
+  height: auto;
+  margin: 25em auto 1em;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: var(--second-color); /* To be defined according to the country */
+  max-height: 200px;
+  z-index:2;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+/***********************************************************
  -  Actions
 ***********************************************************/
 a {
@@ -95,6 +126,12 @@ a {
 body {
     position: relative;
     min-height: 100%;
+}
+
+.border-art {
+  border-radius: 20px 0px 20px 0px;
+  border-bottom: var(--dark) solid 5px;
+  box-shadow: 5px 2px 8px var(--dark);
 }
 
 .carousel {
@@ -223,11 +260,14 @@ div.map img {
 
 /* Small devices (landscape phones, 576px and up) */
 @media(max-width:767px){
-
+  
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media(min-width:768px){
+    p {font-size: 15px;}
+    h2 {font-size: 2.5em;}
+    h3 { font-size: 2em;}
 
     .articleCarousel a {
         max-width: 90%;
@@ -240,6 +280,7 @@ div.map img {
 
 /* Large devices (desktops, 992px and up) */
 @media(min-width:992px){
+    p {font-size: 16px;}
     
     .placeholderCarousel {
         height: 20rem;
@@ -273,6 +314,9 @@ div.map img {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
+  p {font-size: 18px;}
+  h2 {font-size: 3em;}
+  h3 { font-size: 2.5em;}
    
     .placeholderCarousel {
         height: 25rem;
@@ -300,6 +344,5 @@ div.map img {
         width: 3rem;
         height: 3rem;
     }
-    
-    
+     
 }
