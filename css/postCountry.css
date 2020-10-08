@@ -175,14 +175,6 @@ h5 {
 /***********************************************************
  -  Media Query (bootstrap size)
 ***********************************************************/
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (max-width:767px){
-
-}
-
-
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width:768px) and (max-width:992px) {
 
