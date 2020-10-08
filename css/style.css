@@ -248,10 +248,13 @@ div.map img {
     color: #eee;
 }
 
+.comment {
+    margin : 5% auto;
+}
 
-
-
-
+.labelComments {
+    padding-top: 1em;
+}
 
 
 /***********************************************************
