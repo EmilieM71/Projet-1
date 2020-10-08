@@ -77,7 +77,7 @@
 
 
   <div class="slider">
-    <div class="slider-container hidden-mobile">
+    <div class="slider-container hidden-mobile fadeIn">
       <div class="miniplan"><img src="images/miniplansolo.png" ></div>
         <div class="encard">
           <div class="encard-title">France</div>
@@ -89,7 +89,7 @@
   </div>
 
   <div class="container main">
-
+    <div class="lateral-title fadeIn">France</div>
     <!-- breadcrumb -->
     <ul class="breadcrumb">
       <li><a href="index.html">Home</a></li>
@@ -170,6 +170,13 @@
   sliderElement.style.background = "url('images/countries/france/paris-2017-home.jpg')";
   sliderElement.style.backgroundPosition = "center 95%";
   sliderElement.style.backgroundSize = "cover";
+
+
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const country = urlParams.get('p')
+    console.log(country);
   </script>
 </body>
 
