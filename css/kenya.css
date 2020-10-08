@@ -1,0 +1,353 @@
+:root {
+    --main-color: #3ED3D6;
+    --secondary-color: #3BCCA6;
+    --light: rgba(250, 245, 242, 0.938);
+    --dark: #0D2B2B;
+  
+    --main-font: 'Poppins', sans-serif;
+    --title-font: 'Cabin Sketch', cursive;
+  
+    --text-font-size: 16pt;
+}
+.logo {height: 40px}
+/***********************************************************
+ - Body
+***********************************************************/
+body {
+    font-family: var(--main-font);
+    color: black; /* To define */
+    background-color: var(--light); /* To define */
+}
+
+/***********************************************************
+ - Navbar
+***********************************************************/
+
+.header {
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--main-color);
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: var(--dark);
+    color: #fff;
+  }
+
+
+
+
+
+/***********************************************************
+ - Titles, paragraph
+***********************************************************/
+.title {
+    font-family: var(--title-font);
+    color: black; /* To define */
+    padding: 0px; /* To define */
+    margin: 0px; /* To define */
+}
+    .title--h1 {font-size: 2.5em;} /* To define */
+    .title--h2 {font-size: 2em;} /* To define */
+    .title--h3 {font-size: 1.5em;} /* To define */
+
+p {font-size: 12px;}
+
+/***********************************************************
+ - image
+***********************************************************/
+.img-responsive {
+    max-width: 100%;
+}
+
+.fullImgInDiv {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/***********************************************************
+ - Border
+***********************************************************/
+.border-art {
+    border-radius: 20px 0px 20px 0px;
+    border-bottom: var(--dark) solid 5px;
+    box-shadow: 5px 2px 8px var(--dark);
+}
+
+/***********************************************************
+ - main
+***********************************************************/
+
+.mainContainer {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    display: block;
+    align-items: center;
+}
+
+/***********************************************************
+ - fullWidthImg and summarySection
+***********************************************************/
+.fullImgInDiv {
+    max-height: 300px;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.summarySection {
+    background-color: var(--secondary-color); /* To be defined according to the country */
+    box-sizing: border-box;
+    height:auto; 
+    max-height: 200px;
+    padding : 10px;
+    display: block;
+    z-index:2;
+    opacity: 0.7;
+    overflow: hidden;
+    margin: 1em;
+}
+
+/***********************************************************
+ - Section history and culture
+***********************************************************/
+.secondSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* article.history */
+.history {
+    margin: 1em;
+    display: block;
+    padding: 1em;
+}
+
+/* div.col2>p>img.mapFidji_224x225 */
+.mapFidji_224x225 {
+    width: 225px;
+    max-width: 100%;
+    min-width: 24%;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+/***********************************************************
+ - Section tourism and monuments
+***********************************************************/
+
+/********** Create slider **********/
+.slider {
+    max-width: 500px;
+    width: 100%;
+    max-height: 330px;
+    height: auto;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slides {
+    width: calc(500px * 6);
+    animation: sliderImg 10s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+@keyframes sliderImg {
+    0% {transform: translateX(0);}
+    5% {transform: translateX(0);}
+    10% {transform: translateX(0);}
+    17% {transform: translateX(-500px);}
+    20% {transform: translateX(-500px);}
+    25% {transform: translateX(-500px);}
+    33% {transform: translateX(-1000px);}
+    40% {transform: translateX(-1000px);}
+    45% {transform: translateX(-1000px);}
+    50% {transform: translateX(-1500px);}
+    55% {transform: translateX(-1500px);}
+    60% {transform: translateX(-1500px);}
+    67% {transform: translateX(-2000px);}
+    75% {transform: translateX(-2000px);}
+    80% {transform: translateX(-2000px);}
+    83% {transform: translateX(-2500px);}
+    90% {transform: translateX(-2500px);}
+    95% {transform: translateX(-2500px);}
+    100% {transform: translateX(0px);}
+    
+}
+
+.artWithP {
+    padding: 1em;
+    margin: 1em;
+}
+
+.dish {
+    max-width: 300px;
+    float: left;
+    margin: 0 1em;
+}
+/***********************************************************
+        Photo mosaic
+***********************************************************/
+
+.photo-mosaic {
+    margin: 1em;
+    padding: 1em;
+}
+
+/***********************************************************
+ -  Media Query (bootstrap size)
+***********************************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width:767px){
+    p {font-size: 13px;}
+    h2 {font-size: 2.5em;}
+    h3 { font-size: 2em;}
+
+}
+
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width:768px) and (max-width:992px) {
+    p {font-size: 14px;}
+    .title--h2 {font-size: 3em;} /* To define */
+    .title--h3 {font-size: 2.5em;} /* To define */
+
+    .mainContainer {
+        width: 80%;
+    }   
+
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width:992px) {
+    p {font-size: 15px;}
+    .title--h2 {font-size: 3.5em;} /* To define */
+    .title--h3 {font-size: 3em;} /* To define */
+
+    .mainContainer {
+        width: 60%;
+    }
+
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
+    }
+
+    .mosaic {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(50px, auto);
+        width: 100%;
+        height: auto;
+        animation: none;
+    }
+
+    .slide {float: none; border: 1px solid red;}
+
+    .slider {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .mosaicImg {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .slider > div > div:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    
+    .slider > div > div:nth-child(2) {
+        grid-column: 3 / 6;
+        grid-row: 1 / 4;
+    }
+    
+    .slider > div > div:nth-child(3) {
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+    }
+    
+    .slider > div > div:nth-child(4) {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+    
+    .slider > div > div:nth-child(5) {
+        grid-column: 1 / 4;
+        grid-row: 5 / 7;
+    }
+    
+    .slider > div > div:nth-child(6) {
+        grid-column: 4 / 6;
+        grid-row: 4 / 7;
+    }
+
+    /* .mosaicImg {width: 50px; height: 30px;} */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px){
+    p {font-size: 16px;}
+    .title--h2 {font-size: 4em;} /* To define */
+    .title--h3 {font-size: 3.5em;} /* To define */
+
+    .mainContainer {
+        width: 50%;
+    }
+
+    .summarySection {
+        width:25em;
+        position: absolute;
+        top: 3em; 
+        right: 10em;
+        max-height: 300px;
+    }
+
+    .hide {
+        display: block;
+        float: right;
+        margin: 0 2em;
+    }
+}
