@@ -1,0 +1,14 @@
+:root {
+  /* --main-color: #C07DF0;
+      --secondary-color: #D7A9F8; */
+  --light: #f2e1fe; /* art-modal */
+  --dark: #09da60; /* nav titles and border */
+}
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #07c054;
+  color: #fff;
+}
+.summarySection {
+  opacity: 0.8;
+}

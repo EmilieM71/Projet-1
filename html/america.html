@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/postCountry.css" />
+    <link rel="stylesheet" href="../css/america.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html"
+          ><img
+            src="../images/sources/logo_w.png"
+            class="logo"
+            alt="Logo de WildTrip"
+        /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="articles.html">Pays</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <div class="fixmenu"></div>
+        <img
+          class="fullImgInDiv"
+          src="../images/Mexico/LasColoradas_Lagon.jpg"
+          alt="Image paysage du pays"
+        />
+      </div>
+      <div class="mainContainer">
+        <section class="firstSection">
+          <div class="summarySection border-art">
+            <h3 class="title title--h3">Yucatàn</h3>
+            <p>
+              La péninsule du Yucatán se trouve sur le golfe du Mexique, faisant
+              face à Cuba et à la Floride. Le Yucatán possède les plus belles
+              plage du Mexique, aux eaux turquoises et au sable blanc. C'est
+              donc la région la plus touristique du pays, notamment du côté de
+              Cancún.
+            </p>
+          </div>
+        </section>
+        <section class="secondSection">
+          <article class="artWithP history border-art">
+            <div>
+              <h2 class="title title--h2">Histoire et culture</h2>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="mapFidji_224x225 hide"
+                  src="../images/Mexico/mexico.jpg"
+                  alt="carte du pays"
+                />
+              </div>
+              <div>
+                <p>
+                  Le Yucatán, État de Yucatán, est situé au sud-est du Mexique,
+                  sur la Péninsule du Yucatán. Il est bordé par le golfe du
+                  Mexique au nord et par les États de Campeche au sud-ouest et
+                  de Quintana Roo à l'est, qui font tous deux également partie
+                  de la péninsule du Yucatán. Cet état, qui s'étend sur 38 402
+                  km2 et compte 106 municipalités, a pour capitale Mérida. Il
+                  est peuplé d'environ 2,1 millions d'habitants.
+                </p>
+                <p>
+                  La péninsule du Yucatan fut le berceau de la civilisation maya
+                  avant l'arrivée des espagnols qui prirent définitivement
+                  possession des lieux au XVIème siècle
+                </p>
+                <p>
+                  Au milieu du xixe siècle, l'État de Yucatán déclara à deux
+                  reprises son indépendance et se constitua en une République du
+                  Yucatán, demandant même à un moment l'adhésion aux États-Unis
+                  d'Amérique.
+                </p>
+                <p>
+                  L'écosystème du Yucatan est impressionnant : on y dénombre pas
+                  moins de 580 espèces de vertébrés (jaguars, cerfs, pumas,
+                  ocelots, singes…), 95 espèces de reptiles dont le crocodile,
+                  la tortue et l'iguane, 71 espèces de poissons et 356 espèces
+                  d'oiseaux dont les aigrettes, les frégates, les
+                  martins-pêcheurs, les hérons bleus et les pélicans blancs
+                </p>
+              </div>
+              <div>
+                <p>
+                  On raconte que le nom de cette péninsule viendrait d'un
+                  malentendu. A leur arrivée, les colons espagnols auraient
+                  demandé au premier indien sur leur chemin comment s'appelait
+                  cet endroit, l'indien aurait répondu « je ne sais pas »,
+                  yucatan en maya !
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="photo-mosaic border-art">
+            <div>
+              <h2 class="title title--h2">Tourisme et monument</h2>
+            </div>
+            <div class="slider">
+              <div class="slides mosaic">
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv open-modal"
+                    src="../images/Mexico/GrandPrismaticSpring500x375.jpg"
+                    alt=""
+                    onclick="zoomImg('../images/Mexico/cancun-decouverte-92x69.jpg')"
+                  />
+                </div>
+                <div class="modal">
+                  <div class="border-art modal-inner">
+                    <h3>Yucatàn</h3>
+                    <p>
+                      La péninsule du Yucatán s'étend sur 38 402 km2 et compte
+                      106 municipalités. Elle est peuplée d'environ 2,1 millions
+                      d'habitants.
+                    </p>
+                    <button class="close-modal">
+                      <span class="icon-cross"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv"
+                    src="../images/sources/ruinesEdzna.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv"
+                    src="../images/sources/cancun-aerial-700x300.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv"
+                    src="../images/sources/oleo-cancun-mexique-decouverte-700x300.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv"
+                    src="../images/sources/ecureuil-du-yucatan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="mosaicImg fullImgInDiv"
+                    src="../images/sources/Tulum.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="artWithP border-art">
+            <div>
+              <h2 class="title title--h2">Spécialités culinaires</h2>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="dish fullImgInDiv"
+                  src="../images/mexico/poc_chuc400x300.jpg"
+                  alt="photo plan"
+                />
+              </div>
+              <div>
+                <p>Recette : Poc Chuc</p>
+                <p>
+                  Le Yucatan a une cuisine très traditionnelle fondée sur des
+                  recettes transmises depuis des siècles, et notamment des plats
+                  datant de l'èpoque où les Mayas habitèrent la péninsule. En
+                  raison de sa localisation côtière, cette cuisine repose avant
+                  tout sur le poisson et les fruits de mer, particulièrement
+                  dans les établissements de bord de mer.
+                </p>
+                <p>
+                  En général, la cuisine du Yucatan n'est pas aussi épicée que
+                  dans les autres région; elle est réputée pour ses viandes
+                  tendres et sa grande variété de plats de poissons qui
+                  comportent plus de légumes et de fruits que ceux des autres
+                  régions du Mexique.
+                </p>
+              </div>
+              <div>
+                <p>
+                  1) Salez les filets de porc des deux cotés.<br />2) Cuire (au
+                  charbon, c'est encore meilleur) le porc avec les tomates
+                  entières et les oignons coupés en 2.<br />3) Extraire le jus
+                  de 3 oranges et faire tremper les morceaux de viande dans ce
+                  jus quelques minutes.<br />4) Couper les tomates en petits
+                  cubes, ciseler la coriandre, couper les oignons cuits et
+                  arroser le tout d'1/4 de verre d'eau, d'une pincée de sel, de
+                  l'orange pressée et laisser un peu mariner.<br />5) Faire des
+                  tacos et déguster !
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div><p>Plan du site</p></div>
+      <div>
+        <ul class="plan">
+          <li>
+            <a href="contact.html" title="Vers formulaire de contact"
+              ><p>Contact</p></a
+            >
+          </li>
+          <li>
+            <a href="category.html" title="Vers la liste des articles"></a>
+            <p>Make your choice</p>
+          </li>
+        </ul>
+      </div>
+      <div class="socialLinks">
+        <a href="https://www.facebook.com" title="Visitez notre page Facebook"
+          ><img src="../images/sources/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://www.twitter.com" title="Visitez notre page Twitter"
+          ><img src="../images/sources/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://www.instagram.com" title="Visitez notre page Instagram"
+          ><img src="../images/sources/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.pinterest.com" title="Visitez notre page Pinterest"
+          ><img src="../images/sources/pinterest.png" alt="Pinterest"
+        /></a>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
