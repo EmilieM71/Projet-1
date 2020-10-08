@@ -58,8 +58,9 @@ h5 {
 /***********************************************************
  - fullWidthImg and summarySection
 ***********************************************************/
-.fullImgInDiv {
+.mosaicImg .fullImgInDiv .open-modal {
     max-height: 300px;
+    max-width: 500px;
 }
 
 .firstSection {
@@ -237,22 +238,22 @@ h5 {
         grid-row: 1 / 4;
     }
     
-    .slider > div > div:nth-child(4) {
+    .slider > div > div:nth-child(5) {
         grid-column: 1 / 3;
         grid-row: 3 / 5;
     }
     
-    .slider > div > div:nth-child(5) {
+    .slider > div > div:nth-child(7) {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
     }
     
-    .slider > div > div:nth-child(6) {
+    .slider > div > div:nth-child(9) {
         grid-column: 1 / 4;
         grid-row: 5 / 7;
     }
     
-    .slider > div > div:nth-child(7) {
+    .slider > div > div:nth-child(11) {
         grid-column: 4 / 6;
         grid-row: 4 / 7;
     }
