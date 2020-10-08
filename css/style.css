@@ -190,6 +190,7 @@ body {
 
 .block-element {
     display: inline-block;
+    min-width: 500px;
 }
 
 footer {
