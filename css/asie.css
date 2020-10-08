@@ -1,0 +1,40 @@
+:root {
+    /* --main-color: #C07DF0;
+    --secondary-color: #D7A9F8; */
+    --light: #d85517; /* art-modal */
+    --dark: #ac4a1b; /* nav titles and border */
+  
+}
+
+.header {
+    background-color: var(--dark);
+}
+
+.header ul {
+    background-color: var(--dark);
+}
+/***********************************************************
+ -  Titres
+***********************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--dark);
+} 
+
+
+.summarySection >H3{
+    color:#FFF;
+}
+    
+.summarySection >p{
+    color:#FFF;
+}
+    
+.menu > li:hover a, .menu > li:hover{
+    background-color: var(--light);
+}
+
