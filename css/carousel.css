@@ -16,10 +16,7 @@
     height: 30px;
 }
 
-.barreDefil {
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .link1{
     background-image: url("../images/Kenya/kenya2.jpeg");
@@ -36,4 +33,47 @@
 .link4{
     background-image: url();
     box-shadow:  5px 2px 8px #f5b771;
+}
+
+/***********************************************************
+ -  Media Query (bootstrap size)
+***********************************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media(max-width:767px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media(min-width:768px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width:992px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 10rem;
+        opacity: 70%;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 15rem;
+        opacity: 70%;
+    }
 }
