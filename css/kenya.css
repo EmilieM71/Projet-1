@@ -108,9 +108,6 @@ p {font-size: 12px;}
 /***********************************************************
  - fullWidthImg and summarySection
 ***********************************************************/
-.fullImgInDiv {
-    max-height: 300px;
-}
 
 .firstSection {
     display: flex;
