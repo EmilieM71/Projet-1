@@ -22,18 +22,38 @@
     background-image: url("../images/Kenya/kenya2.jpeg");
     box-shadow:  5px 2px 8px #f5b771;
 }
+
+.link1 .textArticleCarousel{
+    background-color: #f5b771;
+}
+
 .link2{
     background-image: url("../images/sources/LasColoradas_Lagon.jpg");
     box-shadow:  5px 2px 8px #09da60;
 }
+
+.link2 .textArticleCarousel{
+    background-color: #09da60;
+}
+
 .link3{
     background-image: url("../images/fidji/Mamanuca2.jpg");
     box-shadow:  5px 2px 8px #9036D0;
 }
+
+.link3 .textArticleCarousel{
+    background-color: #9036D0;
+}
+
 .link4{
     background-image: url("../images/thailand/001.jpg");
     box-shadow:  5px 2px 8px #ac4a1b;
 }
+
+.link4 .textArticleCarousel{
+    background-color: #ac4a1b;
+}
+
 
 /***********************************************************
  -  Media Query (bootstrap size)
