@@ -85,35 +85,3 @@ goRight.addEventListener('click', () => {
 
 
 
-// switch (activeBox) {
-//     case 1:
-//         box1.classList.remove("backBox");
-//         box1.classList.add("frontBox");
-//         box2.classList.add("backBox");
-//         box3.classList.add("backBox");
-//         box4.classList.add("backBox");
-//         break;
-//     case 2:
-//         box1.classList.add("backBox");
-//         box2.classList.remove("backBox");
-//         box2.classList.add("frontBox");
-//         box3.classList.add("backBox");
-//         box4.classList.add("backBox"); 
-//         break;
-//     case 3:
-//         box1.classList.add("backBox");
-//         box2.classList.add("backBox");
-//         box3.classList.remove("backBox");
-//         box3.classList.add("frontBox");
-//         box4.classList.add("backBox"); 
-//         break;
-//     case 4:
-//         box1.classList.add("backBox");
-//         box2.classList.add("backBox");
-//         box3.classList.add("backBox");
-//         box4.classList.remove("backBox");
-//         box4.classList.add("frontBox"); 
-//         break;
-//     default:
-//         alert("Error");        
-// }
