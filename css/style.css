@@ -415,14 +415,23 @@ div.map img {
   margin: 20px 0px;
 }
 
+/* Intro */
+
+.intro {
+    text-align: center;
+}
+
+.intro a {
+    text-decoration: underline;
+    color: gray;
+}
+
 /***********************************************************
    -  Media Query (bootstrap size)
   ***********************************************************/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
-
-
 
   .article-bloc{
       background-color: #f2f2f2;
@@ -440,10 +449,6 @@ div.map img {
       height: 200px;
       width: 100%;
   }
-
-
-
-
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -465,13 +470,6 @@ div.map img {
   .placeholderCarousel {
     height: 15rem;
   }
-
-
-
-
-
-
-
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
