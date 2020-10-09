@@ -231,25 +231,23 @@ body {
 }
 
 .placeholderCarousel {
-  height: 10rem;
+    height: 10rem;
 }
 
-.articleCarousel a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('../images/kenya/kenya1.jpg') no-repeat;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 1em;
-  margin: 0;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 5px 2px 8px #a8763d;
-  background-position: center;
+.articleCarousel a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 1em;
+    margin: 0;
+    border-radius: 20px 20px 20px 20px;
+    background-position: center;
 }
 
 .textArticleCarousel h2 {
@@ -482,11 +480,38 @@ div.map img {
     justify-content: center;
   }
 
-  .socialLinks a {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1rem;
-  }
+/* Large devices (desktops, 992px and up) */
+@media(min-width:992px){
+    p {font-size: 16px;}
+    
+    .placeholderCarousel {
+        height: 20rem;
+    }
+
+    .articleCarousel a {
+        width: 70%;
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .socialLinks a {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+}
 
   .socialLinks a img {
     justify-self: center;
@@ -496,40 +521,35 @@ div.map img {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  p {
-    font-size: 18px;
-  }
-  h2 {
-    font-size: 3em;
-  }
-  h3 {
-    font-size: 2.5em;
-  }
+@media(min-width:1200px){
+  p {font-size: 18px;}
+  h2 {font-size: 3em;}
+  h3 { font-size: 2.5em;}
+   
+    .placeholderCarousel {
+        height: 25rem;
+    }
 
-  .placeholderCarousel {
-    height: 25rem;
-  }
+    .articleCarousel a {
+        width: 70%;
+    }
 
-  .articleCarousel a {
-    max-width: 90%;
-  }
+    .socialLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
 
-  .socialLinks {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  .socialLinks a {
-    width: 3rem;
-    height: 3rem;
-    margin: 1.5rem;
-  }
-
-  .socialLinks a img {
-    justify-self: center;
-    width: 3rem;
-    height: 3rem;
-  }
+    .socialLinks a {
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem;
+    }
+    
+    .socialLinks a img {
+        justify-self: center;
+        width: 3rem;
+        height: 3rem;
+    }
 }

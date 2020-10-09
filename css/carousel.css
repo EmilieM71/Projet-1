@@ -5,3 +5,75 @@
 .frontBox {
     display: block;
 }
+
+.buttonLeft {
+    transform: rotateY(180deg);
+}
+
+#btnGen {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.link1{
+    background-image: url("../images/Kenya/kenya2.jpeg");
+    box-shadow:  5px 2px 8px #f5b771;
+}
+.link2{
+    background-image: url("../images/sources/LasColoradas_Lagon.jpg");
+    box-shadow:  5px 2px 8px #f5b771;
+}
+.link3{
+    background-image: url("../images/fidji/Mamanuca2.jpg");
+    box-shadow:  5px 2px 8px #f5b771;
+}
+.link4{
+    background-image: url();
+    box-shadow:  5px 2px 8px #f5b771;
+}
+
+/***********************************************************
+ -  Media Query (bootstrap size)
+***********************************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media(max-width:767px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media(min-width:768px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width:992px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 10rem;
+        opacity: 70%;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+    .barreDefil {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 15rem;
+        opacity: 70%;
+    }
+}
