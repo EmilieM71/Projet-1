@@ -115,6 +115,98 @@ a {
 
 
 
+/* Bouton*/
+.btn {
+    display: inline-block !important;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 12px 0px 12px 0px;
+}
+
+
+.btn-reservation{
+    margin:20px;
+}
+
+
+.btn-default{
+    color:#FFF;
+    background-color: #333333;
+}
+
+.btn-default:hover{
+    background-color: #828282;
+    color:#FFF;
+}
+
+
+.btn-blue{
+    color:#FFF;
+    background-color: #1e78a7;
+}
+
+.btn-blue:hover{
+    background-color: #1c5e80;
+    color:#FFF;
+}
+
+/* Tags*/
+.tags {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 4px 6px;
+    font-size: 11px;
+    margin-left:8px;
+}
+
+.tags-big {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 6px 10px;
+    font-size: 22px;
+}
+
+
+.tags-default{
+    color:#FFF;
+    background-color: #333333;
+}
+
+.tags-default:hover{
+    background-color: #828282;
+    color:#FFF;
+}
+
 /***********************************************************
  -  Blocks
 ***********************************************************/
@@ -250,6 +342,88 @@ div.map img {
 
 
 
+
+/***********************************************************
+ -  Align Blocks
+***********************************************************/
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/***********************************************************
+ -  Pages : articles
+***********************************************************/
+
+
+
+
+ .mg-0-5{
+    margin:0px 5px;
+}
+
+.article-filtre-text{
+    font-size : 32px;
+    margin-right: 10px;
+    color:#b4b4b4;
+}
+
+.article-bloc{
+    background-color: #f2f2f2;
+    padding:30px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px 0px 20px 0px;
+    border-bottom: #333333 solid 5px;
+    box-shadow: 5px 2px 8px #333333;
+ 
+    margin-bottom: 25px;
+}
+
+.article-bloc > div {
+    padding:25px;
+}
+
+
+
+.article-bloc > div:first-child > img {
+    border-radius: 20px 0px 20px 0px;
+    object-fit: cover;
+    height: 160px;
+    width: 300px;
+}
+
+.article-bloc > div:first-child {
+    flex: 1 30%;
+    display:inline-block;
+}
+
+
+.article-bloc > div:last-child {
+    flex: 1 70%;
+    display:inline-block;
+}
+
+.article-filtre-justify{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.article-section > H1{
+    margin:20px 0px;
+}
 
 
 
