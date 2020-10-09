@@ -38,3 +38,15 @@ h5 {
     background-color: var(--light);
 }
 
+
+
+
+
+.modal-inner {
+    background-color: #FFF;
+}
+.border-art {
+    border-radius: 20px 0px 20px 0px;
+    border-bottom: #000 solid 5px;
+    box-shadow: 5px 2px 8px #000;
+}
