@@ -14,8 +14,8 @@
     background-color: var(--dark);
 }
 
-.menu-btn:hover {
-    background-color: #ac6adc;
+.header li a:hover {
+    background-color: var(--dark);
   }
 /***********************************************************
  -  Titres
