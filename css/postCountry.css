@@ -205,7 +205,7 @@ h5 {
         animation: none;
     }
 
-    .slide {float: none; border: 1px solid red;}
+    .slide {float: none;}
 
     .slider {
         width: 100%;
