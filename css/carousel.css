@@ -44,6 +44,7 @@
     .barreDefil {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 20px;
     }
 }
 
@@ -52,6 +53,9 @@
     .barreDefil {
         display: flex;
         justify-content: space-around;
+        position: relative;
+        bottom: 17rem;
+        opacity: 70%;
     }
 }
 
@@ -61,7 +65,7 @@
         display: flex;
         justify-content: space-around;
         position: relative;
-        bottom: 10rem;
+        bottom: 17rem;
         opacity: 70%;
     }
 }
@@ -73,7 +77,7 @@
         display: flex;
         justify-content: space-around;
         position: relative;
-        bottom: 15rem;
+        bottom: 17rem;
         opacity: 70%;
     }
 }
