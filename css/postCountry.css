@@ -13,6 +13,10 @@
 .header ul {
     background-color: var(--dark);
 }
+
+.menu-btn:hover {
+    background-color: #ac6adc;
+  }
 /***********************************************************
  -  Titres
 ***********************************************************/
@@ -205,7 +209,7 @@ h5 {
         animation: none;
     }
 
-    .slide {float: none; border: 1px solid red;}
+    .slide {float: none;}
 
     .slider {
         width: 100%;
@@ -218,6 +222,7 @@ h5 {
         height: 100%;
         max-height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     .slider > div > div:nth-child(1) {
